@@ -1,0 +1,19 @@
+{
+  "differences": {
+    "model": {
+      "3b": "Qwen/Qwen2.5-3B-Instruct",
+      "8b": "Qwen/Qwen3-8B"
+    },
+    "chat_template_kwargs": {
+      "3b": null,
+      "8b": {
+        "enable_thinking": false
+      }
+    },
+    "requested_model_revision": {
+      "3b": null,
+      "8b": "b968826d9c46dd6066d109eabc6255188de91218"
+    }
+  },
+  "same_questions_targets_graph_vaccine_parser_and_decoding": true
+}

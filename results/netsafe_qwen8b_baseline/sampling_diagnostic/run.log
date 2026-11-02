@@ -1,0 +1,238 @@
+/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/cuda/__init__.py:435: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  queued_call()
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:25<01:40, 25.21s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:47<01:10, 23.59s/it]Loading checkpoint shards:  60%|██████    | 3/5 [01:08<00:44, 22.31s/it]Loading checkpoint shards:  80%|████████  | 4/5 [01:26<00:20, 20.73s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:34<00:00, 16.09s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:34<00:00, 18.93s/it]
+{"event": "model_loaded", "seconds": 95.83, "cached_requests": 0}
+{"event": "round_started", "round": 0, "logical_requests": 240, "unique_uncached_requests": 120}
+`generation_config` default values have been modified to match model-specific defaults: {'do_sample': True, 'temperature': 0.6, 'top_k': 20, 'top_p': 0.95, 'bos_token_id': 151643}. If this is not desired, please set these values explicitly.
+{"event": "batch_complete", "round": 0, "completed": 8, "total": 120, "seconds": 20.59, "output_tokens": 1069, "aggregate_tokens_per_second": 51.91, "elapsed_minutes": 1.94}
+{"event": "batch_complete", "round": 0, "completed": 16, "total": 120, "seconds": 17.96, "output_tokens": 1024, "aggregate_tokens_per_second": 57.03, "elapsed_minutes": 2.24}
+{"event": "batch_complete", "round": 0, "completed": 24, "total": 120, "seconds": 14.17, "output_tokens": 906, "aggregate_tokens_per_second": 63.95, "elapsed_minutes": 2.48}
+{"event": "batch_complete", "round": 0, "completed": 32, "total": 120, "seconds": 17.5, "output_tokens": 1025, "aggregate_tokens_per_second": 58.57, "elapsed_minutes": 2.77}
+{"event": "batch_complete", "round": 0, "completed": 40, "total": 120, "seconds": 18.57, "output_tokens": 1028, "aggregate_tokens_per_second": 55.35, "elapsed_minutes": 3.08}
+{"event": "batch_complete", "round": 0, "completed": 48, "total": 120, "seconds": 19.05, "output_tokens": 1020, "aggregate_tokens_per_second": 53.55, "elapsed_minutes": 3.4}
+{"event": "batch_complete", "round": 0, "completed": 56, "total": 120, "seconds": 18.41, "output_tokens": 1026, "aggregate_tokens_per_second": 55.72, "elapsed_minutes": 3.7}
+Traceback (most recent call last):
+  File "/home/yixiong/school/capstone/scripts/run_local_baseline.py", line 394, in <module>
+    main()
+  File "/home/yixiong/school/capstone/scripts/run_local_baseline.py", line 347, in main
+    backend.flush(round_index)
+  File "/home/yixiong/school/capstone/scripts/run_local_baseline.py", line 198, in flush
+    outputs = self.model.generate(**inputs, generation_config=self.generation_config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/transformers/generation/utils.py", line 2566, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/transformers/generation/utils.py", line 2789, in _sample
+    outputs = model_forward(**model_inputs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 480, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 398, in forward
+    "full_attention": create_causal_mask(**mask_kwargs),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/transformers/masking_utils.py", line 825, in create_causal_mask
+    causal_mask = mask_interface(
+                  ^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/transformers/masking_utils.py", line 392, in sdpa_mask_recent_torch
+    causal_mask = _vmap_for_bhqkv(mask_function)(batch_arange, head_arange, cache_position, kv_arange)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/apis.py", line 208, in wrapped
+    return vmap_impl(
+           ^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 283, in vmap_impl
+    return _flat_vmap(
+           ^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 433, in _flat_vmap
+    batched_outputs = func(*batched_inputs, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/apis.py", line 208, in wrapped
+    return vmap_impl(
+           ^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 283, in vmap_impl
+    return _flat_vmap(
+           ^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 433, in _flat_vmap
+    batched_outputs = func(*batched_inputs, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/apis.py", line 208, in wrapped
+    return vmap_impl(
+           ^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 283, in vmap_impl
+    return _flat_vmap(
+           ^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 433, in _flat_vmap
+    batched_outputs = func(*batched_inputs, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/apis.py", line 208, in wrapped
+    return vmap_impl(
+           ^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 283, in vmap_impl
+    return _flat_vmap(
+           ^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 433, in _flat_vmap
+    batched_outputs = func(*batched_inputs, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/transformers/masking_utils.py", line 54, in and_mask
+    result = result & mask(batch_idx, head_idx, q_idx, kv_idx).to(result.device)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/transformers/masking_utils.py", line 142, in inner_mask
+    return padding_mask[batch_idx, kv_idx]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_dynamo/_trace_wrapped_higher_order_op.py", line 146, in __torch_function__
+    return mod_index(args[0], index_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_export/wrappers.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_dynamo/_trace_wrapped_higher_order_op.py", line 123, in apply
+    return super().apply(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/autograd/function.py", line 593, in apply
+    return custom_function_call(cls, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+    return super().__call__(autograd_function, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_ops.py", line 510, in __call__
+    return self.dispatch(dispatch_key_set.highestPriorityTypeId(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_ops.py", line 363, in dispatch
+    return dispatch_functorch(self, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/pyfunctorch.py", line 316, in dispatch_functorch
+    return interpreter.process(op, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/pyfunctorch.py", line 140, in process
+    return kernel(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+    return custom_function_call_vmap_generate_rule(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+    outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+    return super().__call__(autograd_function, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_ops.py", line 510, in __call__
+    return self.dispatch(dispatch_key_set.highestPriorityTypeId(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_ops.py", line 363, in dispatch
+    return dispatch_functorch(self, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/pyfunctorch.py", line 316, in dispatch_functorch
+    return interpreter.process(op, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/pyfunctorch.py", line 140, in process
+    return kernel(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+    return custom_function_call_vmap_generate_rule(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+    outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+    return super().__call__(autograd_function, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_ops.py", line 510, in __call__
+    return self.dispatch(dispatch_key_set.highestPriorityTypeId(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_ops.py", line 363, in dispatch
+    return dispatch_functorch(self, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/pyfunctorch.py", line 316, in dispatch_functorch
+    return interpreter.process(op, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/pyfunctorch.py", line 140, in process
+    return kernel(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+    return custom_function_call_vmap_generate_rule(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+    outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+    return super().__call__(autograd_function, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_ops.py", line 510, in __call__
+    return self.dispatch(dispatch_key_set.highestPriorityTypeId(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_ops.py", line 363, in dispatch
+    return dispatch_functorch(self, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/pyfunctorch.py", line 316, in dispatch_functorch
+    return interpreter.process(op, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/pyfunctorch.py", line 140, in process
+    return kernel(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+    return custom_function_call_vmap_generate_rule(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+    outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 50, in __call__
+    return autograd_function.apply(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/autograd/function.py", line 583, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 438, in setup_context
+    restore_vmap(
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 461, in inner
+    batched_outputs = func(*batched_inputs, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 418, in inner
+    autograd_function.setup_context(wrapped_ctx, inputs, outputs)
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 438, in setup_context
+    restore_vmap(
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 461, in inner
+    batched_outputs = func(*batched_inputs, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 418, in inner
+    autograd_function.setup_context(wrapped_ctx, inputs, outputs)
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 438, in setup_context
+    restore_vmap(
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 461, in inner
+    batched_outputs = func(*batched_inputs, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 418, in inner
+    autograd_function.setup_context(wrapped_ctx, inputs, outputs)
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 438, in setup_context
+    restore_vmap(
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/vmap.py", line 461, in inner
+    batched_outputs = func(*batched_inputs, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/_functorch/autograd_function.py", line 427, in inner
+    if not hasattr(ctx, "_pt_input_shapes"):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

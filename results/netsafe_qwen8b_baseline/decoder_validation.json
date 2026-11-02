@@ -1,0 +1,15 @@
+{
+  "Qwen/Qwen2.5-3B-Instruct": {
+    "model_metadata_transformers_version": "4.37.0",
+    "previous_resolution": "greedy_search",
+    "fixed_resolution": "greedy_search",
+    "fixed_do_sample": false,
+    "previous_and_fixed_effective_configs_identical": true
+  },
+  "Qwen/Qwen3-8B": {
+    "model_metadata_transformers_version": "4.51.0",
+    "previous_resolution": "sample",
+    "fixed_resolution": "greedy_search",
+    "fixed_do_sample": false
+  }
+}

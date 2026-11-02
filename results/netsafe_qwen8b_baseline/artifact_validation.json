@@ -1,0 +1,21 @@
+{
+  "all_720_answers_valid": true,
+  "all_720_upstream_format": true,
+  "no_truncation": true,
+  "report_counts_verified": true,
+  "report_local_links_exist": true,
+  "formal_cache_started_empty": true,
+  "runner_matches_recorded_sha256": true,
+  "sha256": {
+    "report_zh.md": "d7ca25f38de00ebfb8b46ca8ab2b75cf35dba8c11d0b153f645e9dc122f46d98",
+    "config.json": "6a58ff64c9a1e6429a1dc7836e36414d6750d80ed09da7b7a6217b3b04922dbe",
+    "questions.json": "9e02947d13b299b6a245e4b5421a03f3c4c08a308720bd576f6937cf559dbaa3",
+    "trajectories.jsonl": "2a4886dd5155d8e7d15f48c2244578c64c156418d1420d3bbb8ccb7c9b0865b8",
+    "generation_cache.jsonl": "1d16f6b8c1dd2e271ccb68da54cf71a3d7381084ba9a5426eadc530877da1fe4",
+    "summary.json": "5ce24f76a67fa52fa42c2afcb85fc6298efa53c284679d3aabe23ffc670e4806",
+    "summary_runtime.json": "88946ecc8b0ee021538bf581eef4308bb569a77393fa818357d4f4e8f36de586",
+    "model_comparison.csv": "befe82305f2a93a41a78e041266ec5bfdea5a4c7549a229d142d7f85feb93680",
+    "model_comparison.json": "8cccc2d983644f951e7b0f7ea3169d96e6c6a4172b5e8b0d865f5938bcf480e9",
+    "trace_audit.json": "0bada70fea2970b818c31fa69cbce81f56942fc0518efd121a6d8a79e2189789"
+  }
+}

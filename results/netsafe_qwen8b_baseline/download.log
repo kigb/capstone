@@ -1,0 +1,30 @@
+{
+  "repository": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "weight_files": [
+    {
+      "name": "model-00001-of-00005.safetensors",
+      "bytes": 3996250744
+    },
+    {
+      "name": "model-00002-of-00005.safetensors",
+      "bytes": 3993160032
+    },
+    {
+      "name": "model-00003-of-00005.safetensors",
+      "bytes": 3959604768
+    },
+    {
+      "name": "model-00004-of-00005.safetensors",
+      "bytes": 3187841392
+    },
+    {
+      "name": "model-00005-of-00005.safetensors",
+      "bytes": 1244659840
+    }
+  ],
+  "total_weight_bytes": 16381516776,
+  "started_utc": "2026-11-02T02:16:15.441334+00:00"
+}
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files:  29%|██▊       | 4/14 [00:00<00:00, 21.61it/s]Fetching 14 files:  36%|███▌      | 5/14 [00:20<00:36,  4.00s/it]Fetching 14 files:  43%|████▎     | 6/14 [05:41<07:35, 56.95s/it]Fetching 14 files:  50%|█████     | 7/14 [05:42<05:42, 48.86s/it]Fetching 14 files:  57%|█████▋    | 8/14 [05:42<04:16, 42.78s/it]Fetching 14 files:  64%|██████▍   | 9/14 [05:46<03:12, 38.53s/it]Fetching 14 files:  71%|███████▏  | 10/14 [05:47<02:18, 34.72s/it]Fetching 14 files:  79%|███████▊  | 11/14 [05:47<01:34, 31.60s/it]Fetching 14 files:  86%|████████▌ | 12/14 [05:50<00:58, 29.19s/it]Fetching 14 files:  93%|█████████▎| 13/14 [05:54<00:27, 27.29s/it]Fetching 14 files: 100%|██████████| 14/14 [06:10<00:00, 26.45s/it]Fetching 14 files: 100%|██████████| 14/14 [06:10<00:00, 26.45s/it]
+DOWNLOAD_COMPLETE {"repository": "Qwen/Qwen3-8B", "revision": "b968826d9c46dd6066d109eabc6255188de91218", "weight_files": [{"name": "model-00001-of-00005.safetensors", "bytes": 3996250744}, {"name": "model-00002-of-00005.safetensors", "bytes": 3993160032}, {"name": "model-00003-of-00005.safetensors", "bytes": 3959604768}, {"name": "model-00004-of-00005.safetensors", "bytes": 3187841392}, {"name": "model-00005-of-00005.safetensors", "bytes": 1244659840}], "total_weight_bytes": 16381516776, "started_utc": "2026-11-02T02:16:15.441334+00:00", "snapshot_path": "/home/yixiong/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218", "completed_utc": "2026-11-02T02:22:25.792142+00:00", "download_seconds": 370.4843560089357}

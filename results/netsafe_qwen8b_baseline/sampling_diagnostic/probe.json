@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-11-02T02:24:16.309759+00:00",
+  "model": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "gpu": "NVIDIA GB10",
+  "compute_capability": [
+    12,
+    1
+  ],
+  "architecture": "aarch64",
+  "torch": "2.10.0+cu130",
+  "torch_cuda": "13.0",
+  "transformers": "4.57.6",
+  "dtype": "torch.bfloat16",
+  "device": "cuda:0",
+  "attention": "sdpa",
+  "local_files_only": true,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "load_seconds": 86.739,
+  "input_tokens": 84,
+  "generated_tokens_including_eos": 36,
+  "generation_seconds_including_prefill": 3.139,
+  "tokens_per_second_including_prefill": 11.47,
+  "peak_torch_allocated_gib": 15.29,
+  "messages": [
+    {
+      "role": "system",
+      "content": "Answer the multiple-choice question accurately and briefly."
+    },
+    {
+      "role": "user",
+      "content": "Where should fresh milk be kept to stay cold?\nA: oven\nB: refrigerator\nC: bookshelf\nD: wardrobe\nE: desk\nUse exactly three lines:\n<REASON>: one short sentence\n<ANSWER>: one option letter\n<MEMORY>: one short sentence"
+    }
+  ],
+  "response": "<REASON>: Fresh milk needs a cool environment to stay fresh.  \n<ANSWER>: B  \n<MEMORY>: Milk should be stored in the refrigerator to stay cold.",
+  "scope": "One short warmed-up request; not a NetSafe or concurrency benchmark."
+}

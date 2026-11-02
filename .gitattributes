@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+# Preserve generated records byte-for-byte, including CSV CRLF and raw logs.
+*.csv -text whitespace=cr-at-eol
+*.jsonl -text
+*.log -text -whitespace
+
+*.png binary
+*.pdf binary

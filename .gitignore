@@ -1,0 +1,31 @@
+# Local Python environments and caches
+.venv/
+.venv-*/
+.analysis-venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local credentials and model weights
+.env
+.env.*
+!.env.example
+.cache/
+.huggingface/
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.pem
+*.key
+
+# Editor / operating-system files
+.DS_Store
+.idea/
+.vscode/
+*.swp

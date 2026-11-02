@@ -1,0 +1,48 @@
+/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/cuda/__init__.py:435: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  queued_call()
+Loading cached Qwen/Qwen3-8B on NVIDIA GB10
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:23<01:35, 23.84s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:41<01:01, 20.35s/it]Loading checkpoint shards:  60%|██████    | 3/5 [01:00<00:39, 19.76s/it]Loading checkpoint shards:  80%|████████  | 4/5 [01:17<00:18, 18.69s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:25<00:00, 14.76s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:25<00:00, 17.13s/it]
+`generation_config` default values have been modified to match model-specific defaults: {'do_sample': True, 'temperature': 0.6, 'top_k': 20, 'top_p': 0.95, 'bos_token_id': 151643}. If this is not desired, please set these values explicitly.
+{
+  "timestamp_utc": "2026-11-02T02:24:16.309759+00:00",
+  "model": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "gpu": "NVIDIA GB10",
+  "compute_capability": [
+    12,
+    1
+  ],
+  "architecture": "aarch64",
+  "torch": "2.10.0+cu130",
+  "torch_cuda": "13.0",
+  "transformers": "4.57.6",
+  "dtype": "torch.bfloat16",
+  "device": "cuda:0",
+  "attention": "sdpa",
+  "local_files_only": true,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "load_seconds": 86.739,
+  "input_tokens": 84,
+  "generated_tokens_including_eos": 36,
+  "generation_seconds_including_prefill": 3.139,
+  "tokens_per_second_including_prefill": 11.47,
+  "peak_torch_allocated_gib": 15.29,
+  "messages": [
+    {
+      "role": "system",
+      "content": "Answer the multiple-choice question accurately and briefly."
+    },
+    {
+      "role": "user",
+      "content": "Where should fresh milk be kept to stay cold?\nA: oven\nB: refrigerator\nC: bookshelf\nD: wardrobe\nE: desk\nUse exactly three lines:\n<REASON>: one short sentence\n<ANSWER>: one option letter\n<MEMORY>: one short sentence"
+    }
+  ],
+  "response": "<REASON>: Fresh milk needs a cool environment to stay fresh.  \n<ANSWER>: B  \n<MEMORY>: Milk should be stored in the refrigerator to stay cold.",
+  "scope": "One short warmed-up request; not a NetSafe or concurrency benchmark."
+}

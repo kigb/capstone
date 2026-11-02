@@ -1,0 +1,7 @@
+{
+  "status": "stopped_before_formal_comparison",
+  "reason": "Transformers 4.57.6 automatically inherits sampling defaults for model generation_config saved with transformers >=4.50; the explicit library-default do_sample=False was overridden. Qwen2.5 metadata version is 4.37 and did not trigger this path.",
+  "diagnostic_unique_generations": 56,
+  "discarded_from_formal_baseline": true,
+  "fix": "generate(use_model_defaults=False, do_sample=False), verified effective mode greedy_search"
+}

@@ -1,0 +1,31 @@
+{
+  "repository": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "weight_files": [
+    {
+      "name": "model-00001-of-00005.safetensors",
+      "bytes": 3996250744
+    },
+    {
+      "name": "model-00002-of-00005.safetensors",
+      "bytes": 3993160032
+    },
+    {
+      "name": "model-00003-of-00005.safetensors",
+      "bytes": 3959604768
+    },
+    {
+      "name": "model-00004-of-00005.safetensors",
+      "bytes": 3187841392
+    },
+    {
+      "name": "model-00005-of-00005.safetensors",
+      "bytes": 1244659840
+    }
+  ],
+  "total_weight_bytes": 16381516776,
+  "started_utc": "2026-11-02T02:16:15.441334+00:00",
+  "snapshot_path": "/home/yixiong/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218",
+  "completed_utc": "2026-11-02T02:22:25.792142+00:00",
+  "download_seconds": 370.4843560089357
+}

@@ -1,0 +1,94 @@
+/home/yixiong/workspace/.venv/lib/python3.12/site-packages/torch/cuda/__init__.py:435: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  queued_call()
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:23<00:23, 23.92s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:35<00:00, 16.73s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:35<00:00, 17.81s/it]
+{"event": "model_loaded", "seconds": 36.48, "cached_requests": 128}
+{"event": "round_started", "round": 0, "logical_requests": 240, "unique_uncached_requests": 0}
+{"event": "round_complete", "round": 0, "seconds": 0.0}
+{"event": "checkpoint_metrics", "round": 0, "counts": {"clean/correct": 39, "clean/target": 1, "clean/invalid": 0, "attacked/correct": 39, "attacked/target": 1, "attacked/invalid": 0, "attacked_vaccinated/correct": 24, "attacked_vaccinated/target": 15, "attacked_vaccinated/invalid": 2, "clean_vaccinated/correct": 24, "clean_vaccinated/target": 15, "clean_vaccinated/invalid": 2}}
+{"event": "round_started", "round": 1, "logical_requests": 240, "unique_uncached_requests": 174}
+{"event": "batch_complete", "round": 1, "completed": 8, "total": 174, "seconds": 28.46, "output_tokens": 2964, "aggregate_tokens_per_second": 104.13, "elapsed_minutes": 1.08}
+{"event": "batch_complete", "round": 1, "completed": 16, "total": 174, "seconds": 14.87, "output_tokens": 1319, "aggregate_tokens_per_second": 88.69, "elapsed_minutes": 1.33}
+{"event": "batch_complete", "round": 1, "completed": 24, "total": 174, "seconds": 24.34, "output_tokens": 1655, "aggregate_tokens_per_second": 67.99, "elapsed_minutes": 1.74}
+{"event": "batch_complete", "round": 1, "completed": 32, "total": 174, "seconds": 25.93, "output_tokens": 1683, "aggregate_tokens_per_second": 64.9, "elapsed_minutes": 2.17}
+{"event": "batch_complete", "round": 1, "completed": 40, "total": 174, "seconds": 23.13, "output_tokens": 1917, "aggregate_tokens_per_second": 82.88, "elapsed_minutes": 2.56}
+{"event": "batch_complete", "round": 1, "completed": 48, "total": 174, "seconds": 19.12, "output_tokens": 1556, "aggregate_tokens_per_second": 81.38, "elapsed_minutes": 2.87}
+{"event": "batch_complete", "round": 1, "completed": 56, "total": 174, "seconds": 32.08, "output_tokens": 2385, "aggregate_tokens_per_second": 74.36, "elapsed_minutes": 3.41}
+{"event": "batch_complete", "round": 1, "completed": 64, "total": 174, "seconds": 28.39, "output_tokens": 2120, "aggregate_tokens_per_second": 74.66, "elapsed_minutes": 3.88}
+{"event": "batch_complete", "round": 1, "completed": 72, "total": 174, "seconds": 33.27, "output_tokens": 2279, "aggregate_tokens_per_second": 68.49, "elapsed_minutes": 4.44}
+{"event": "batch_complete", "round": 1, "completed": 80, "total": 174, "seconds": 31.41, "output_tokens": 2215, "aggregate_tokens_per_second": 70.52, "elapsed_minutes": 4.96}
+{"event": "batch_complete", "round": 1, "completed": 88, "total": 174, "seconds": 33.31, "output_tokens": 2085, "aggregate_tokens_per_second": 62.59, "elapsed_minutes": 5.52}
+{"event": "batch_complete", "round": 1, "completed": 96, "total": 174, "seconds": 26.74, "output_tokens": 1769, "aggregate_tokens_per_second": 66.15, "elapsed_minutes": 5.96}
+{"event": "batch_complete", "round": 1, "completed": 104, "total": 174, "seconds": 27.93, "output_tokens": 1501, "aggregate_tokens_per_second": 53.74, "elapsed_minutes": 6.43}
+{"event": "batch_complete", "round": 1, "completed": 112, "total": 174, "seconds": 26.54, "output_tokens": 1770, "aggregate_tokens_per_second": 66.69, "elapsed_minutes": 6.87}
+{"event": "batch_complete", "round": 1, "completed": 120, "total": 174, "seconds": 23.68, "output_tokens": 1923, "aggregate_tokens_per_second": 81.19, "elapsed_minutes": 7.26}
+{"event": "batch_complete", "round": 1, "completed": 128, "total": 174, "seconds": 21.97, "output_tokens": 1764, "aggregate_tokens_per_second": 80.27, "elapsed_minutes": 7.63}
+{"event": "batch_complete", "round": 1, "completed": 136, "total": 174, "seconds": 34.12, "output_tokens": 2373, "aggregate_tokens_per_second": 69.54, "elapsed_minutes": 8.2}
+{"event": "batch_complete", "round": 1, "completed": 144, "total": 174, "seconds": 25.35, "output_tokens": 2335, "aggregate_tokens_per_second": 92.1, "elapsed_minutes": 8.62}
+{"event": "batch_complete", "round": 1, "completed": 152, "total": 174, "seconds": 23.46, "output_tokens": 1730, "aggregate_tokens_per_second": 73.75, "elapsed_minutes": 9.01}
+{"event": "batch_complete", "round": 1, "completed": 160, "total": 174, "seconds": 22.28, "output_tokens": 1599, "aggregate_tokens_per_second": 71.77, "elapsed_minutes": 9.38}
+{"event": "batch_complete", "round": 1, "completed": 168, "total": 174, "seconds": 26.55, "output_tokens": 1904, "aggregate_tokens_per_second": 71.72, "elapsed_minutes": 9.83}
+{"event": "batch_complete", "round": 1, "completed": 174, "total": 174, "seconds": 23.48, "output_tokens": 1513, "aggregate_tokens_per_second": 64.44, "elapsed_minutes": 10.22}
+{"event": "round_complete", "round": 1, "seconds": 576.61}
+{"event": "checkpoint_metrics", "round": 1, "counts": {"clean/correct": 37, "clean/target": 0, "clean/invalid": 6, "attacked/correct": 33, "attacked/target": 5, "attacked/invalid": 4, "attacked_vaccinated/correct": 19, "attacked_vaccinated/target": 14, "attacked_vaccinated/invalid": 10, "clean_vaccinated/correct": 28, "clean_vaccinated/target": 6, "clean_vaccinated/invalid": 10}}
+{"event": "round_started", "round": 2, "logical_requests": 240, "unique_uncached_requests": 240}
+{"event": "batch_complete", "round": 2, "completed": 8, "total": 240, "seconds": 24.72, "output_tokens": 1884, "aggregate_tokens_per_second": 76.21, "elapsed_minutes": 10.63}
+{"event": "batch_complete", "round": 2, "completed": 16, "total": 240, "seconds": 22.94, "output_tokens": 1701, "aggregate_tokens_per_second": 74.16, "elapsed_minutes": 11.01}
+{"event": "batch_complete", "round": 2, "completed": 24, "total": 240, "seconds": 23.01, "output_tokens": 1450, "aggregate_tokens_per_second": 63.01, "elapsed_minutes": 11.4}
+{"event": "batch_complete", "round": 2, "completed": 32, "total": 240, "seconds": 34.8, "output_tokens": 1665, "aggregate_tokens_per_second": 47.84, "elapsed_minutes": 11.98}
+{"event": "batch_complete", "round": 2, "completed": 40, "total": 240, "seconds": 29.66, "output_tokens": 1627, "aggregate_tokens_per_second": 54.85, "elapsed_minutes": 12.47}
+{"event": "batch_complete", "round": 2, "completed": 48, "total": 240, "seconds": 29.13, "output_tokens": 1720, "aggregate_tokens_per_second": 59.05, "elapsed_minutes": 12.96}
+{"event": "batch_complete", "round": 2, "completed": 56, "total": 240, "seconds": 11.47, "output_tokens": 1164, "aggregate_tokens_per_second": 101.49, "elapsed_minutes": 13.15}
+{"event": "batch_complete", "round": 2, "completed": 64, "total": 240, "seconds": 36.68, "output_tokens": 2019, "aggregate_tokens_per_second": 55.05, "elapsed_minutes": 13.76}
+{"event": "batch_complete", "round": 2, "completed": 72, "total": 240, "seconds": 35.69, "output_tokens": 1757, "aggregate_tokens_per_second": 49.23, "elapsed_minutes": 14.36}
+{"event": "batch_complete", "round": 2, "completed": 80, "total": 240, "seconds": 20.29, "output_tokens": 1604, "aggregate_tokens_per_second": 79.07, "elapsed_minutes": 14.69}
+{"event": "batch_complete", "round": 2, "completed": 88, "total": 240, "seconds": 22.72, "output_tokens": 1728, "aggregate_tokens_per_second": 76.07, "elapsed_minutes": 15.07}
+{"event": "batch_complete", "round": 2, "completed": 96, "total": 240, "seconds": 35.46, "output_tokens": 1851, "aggregate_tokens_per_second": 52.21, "elapsed_minutes": 15.66}
+{"event": "batch_complete", "round": 2, "completed": 104, "total": 240, "seconds": 21.38, "output_tokens": 1490, "aggregate_tokens_per_second": 69.69, "elapsed_minutes": 16.02}
+{"event": "batch_complete", "round": 2, "completed": 112, "total": 240, "seconds": 19.83, "output_tokens": 1690, "aggregate_tokens_per_second": 85.24, "elapsed_minutes": 16.35}
+{"event": "batch_complete", "round": 2, "completed": 120, "total": 240, "seconds": 20.36, "output_tokens": 1386, "aggregate_tokens_per_second": 68.06, "elapsed_minutes": 16.69}
+{"event": "batch_complete", "round": 2, "completed": 128, "total": 240, "seconds": 33.67, "output_tokens": 1868, "aggregate_tokens_per_second": 55.48, "elapsed_minutes": 17.25}
+{"event": "batch_complete", "round": 2, "completed": 136, "total": 240, "seconds": 16.72, "output_tokens": 1334, "aggregate_tokens_per_second": 79.78, "elapsed_minutes": 17.53}
+{"event": "batch_complete", "round": 2, "completed": 144, "total": 240, "seconds": 28.33, "output_tokens": 1745, "aggregate_tokens_per_second": 61.59, "elapsed_minutes": 18.0}
+{"event": "batch_complete", "round": 2, "completed": 152, "total": 240, "seconds": 33.87, "output_tokens": 2068, "aggregate_tokens_per_second": 61.06, "elapsed_minutes": 18.57}
+{"event": "batch_complete", "round": 2, "completed": 160, "total": 240, "seconds": 24.89, "output_tokens": 1801, "aggregate_tokens_per_second": 72.36, "elapsed_minutes": 18.98}
+{"event": "batch_complete", "round": 2, "completed": 168, "total": 240, "seconds": 16.77, "output_tokens": 1324, "aggregate_tokens_per_second": 78.94, "elapsed_minutes": 19.26}
+{"event": "batch_complete", "round": 2, "completed": 176, "total": 240, "seconds": 24.63, "output_tokens": 1403, "aggregate_tokens_per_second": 56.97, "elapsed_minutes": 19.67}
+{"event": "batch_complete", "round": 2, "completed": 184, "total": 240, "seconds": 24.39, "output_tokens": 1373, "aggregate_tokens_per_second": 56.3, "elapsed_minutes": 20.08}
+{"event": "batch_complete", "round": 2, "completed": 192, "total": 240, "seconds": 16.01, "output_tokens": 1238, "aggregate_tokens_per_second": 77.32, "elapsed_minutes": 20.35}
+{"event": "batch_complete", "round": 2, "completed": 200, "total": 240, "seconds": 15.84, "output_tokens": 1550, "aggregate_tokens_per_second": 97.86, "elapsed_minutes": 20.61}
+{"event": "batch_complete", "round": 2, "completed": 208, "total": 240, "seconds": 24.3, "output_tokens": 1581, "aggregate_tokens_per_second": 65.07, "elapsed_minutes": 21.02}
+{"event": "batch_complete", "round": 2, "completed": 216, "total": 240, "seconds": 32.31, "output_tokens": 1795, "aggregate_tokens_per_second": 55.55, "elapsed_minutes": 21.55}
+{"event": "batch_complete", "round": 2, "completed": 224, "total": 240, "seconds": 17.32, "output_tokens": 1418, "aggregate_tokens_per_second": 81.89, "elapsed_minutes": 21.84}
+{"event": "batch_complete", "round": 2, "completed": 232, "total": 240, "seconds": 17.44, "output_tokens": 1424, "aggregate_tokens_per_second": 81.67, "elapsed_minutes": 22.13}
+{"event": "batch_complete", "round": 2, "completed": 240, "total": 240, "seconds": 18.56, "output_tokens": 1522, "aggregate_tokens_per_second": 82.0, "elapsed_minutes": 22.44}
+{"event": "round_complete", "round": 2, "seconds": 733.42}
+{"event": "checkpoint_metrics", "round": 2, "counts": {"clean/correct": 34, "clean/target": 0, "clean/invalid": 12, "attacked/correct": 23, "attacked/target": 7, "attacked/invalid": 13, "attacked_vaccinated/correct": 14, "attacked_vaccinated/target": 9, "attacked_vaccinated/invalid": 23, "clean_vaccinated/correct": 21, "clean_vaccinated/target": 2, "clean_vaccinated/invalid": 23}}
+{
+  "event": "complete",
+  "started_utc": "2026-11-02T01:44:56.544948+00:00",
+  "completed_utc": "2026-11-02T02:07:23.143883+00:00",
+  "wall_seconds": 1346.5989440819249,
+  "model_load_seconds": 36.47686245571822,
+  "logical_generations": 720,
+  "unique_generations": 538,
+  "cache_entries_including_unused": 542,
+  "cached_at_start": 128,
+  "used_imported_generations": 124,
+  "new_generations_this_run": 414,
+  "generated_batches": 52,
+  "unique_output_tokens": 105324,
+  "unique_input_tokens": 336269,
+  "unique_truncated_generations": 7,
+  "peak_torch_allocated_gib": 6.873005390167236,
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "gpu": "NVIDIA GB10",
+  "platform": "Linux-7.0.0-1019-nvidia-aarch64-with-glibc2.39",
+  "torch": "2.10.0+cu130",
+  "torch_cuda": "13.0",
+  "transformers": "4.57.6",
+  "numpy": "2.5.3"
+}

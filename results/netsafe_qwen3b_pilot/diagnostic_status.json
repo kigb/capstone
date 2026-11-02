@@ -1,0 +1,10 @@
+{
+  "status": "stopped_for_parser_compatibility",
+  "generations": 128,
+  "parser_results": {
+    "normalized_field_labels": 44,
+    "upstream_format": 82,
+    "invalid_format": 2
+  },
+  "notes": "Not a completed baseline; retained for audit. No questions or vaccine changed."
+}
