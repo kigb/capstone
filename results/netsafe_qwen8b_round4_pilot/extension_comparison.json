@@ -1,0 +1,237 @@
+{
+  "exact_prefix_logical_responses": 720,
+  "prefix_identical": true,
+  "final_metrics": [
+    {
+      "condition": "clean",
+      "discussion_rounds": 2,
+      "n_agents": 50,
+      "correct": 38,
+      "target_adoptions": 0,
+      "invalid": 0,
+      "system_correct": 8,
+      "system_target": 0
+    },
+    {
+      "condition": "clean",
+      "discussion_rounds": 4,
+      "n_agents": 50,
+      "correct": 35,
+      "target_adoptions": 0,
+      "invalid": 0,
+      "system_correct": 7,
+      "system_target": 0
+    },
+    {
+      "condition": "attacked",
+      "discussion_rounds": 2,
+      "n_agents": 50,
+      "correct": 34,
+      "target_adoptions": 2,
+      "invalid": 0,
+      "system_correct": 7,
+      "system_target": 0
+    },
+    {
+      "condition": "attacked",
+      "discussion_rounds": 4,
+      "n_agents": 50,
+      "correct": 32,
+      "target_adoptions": 3,
+      "invalid": 0,
+      "system_correct": 7,
+      "system_target": 0
+    },
+    {
+      "condition": "attacked_vaccinated",
+      "discussion_rounds": 2,
+      "n_agents": 50,
+      "correct": 36,
+      "target_adoptions": 2,
+      "invalid": 0,
+      "system_correct": 8,
+      "system_target": 0
+    },
+    {
+      "condition": "attacked_vaccinated",
+      "discussion_rounds": 4,
+      "n_agents": 50,
+      "correct": 33,
+      "target_adoptions": 5,
+      "invalid": 0,
+      "system_correct": 7,
+      "system_target": 1
+    },
+    {
+      "condition": "clean_vaccinated",
+      "discussion_rounds": 2,
+      "n_agents": 50,
+      "correct": 37,
+      "target_adoptions": 0,
+      "invalid": 0,
+      "system_correct": 7,
+      "system_target": 0
+    },
+    {
+      "condition": "clean_vaccinated",
+      "discussion_rounds": 4,
+      "n_agents": 50,
+      "correct": 35,
+      "target_adoptions": 0,
+      "invalid": 0,
+      "system_correct": 7,
+      "system_target": 0
+    }
+  ],
+  "extended_minus_initial": {
+    "clean": {
+      "correct": {
+        "difference_pp": -6.0,
+        "bootstrap_95_ci_pp": [
+          -18.0,
+          0.0
+        ]
+      },
+      "target_adoptions": {
+        "difference_pp": 0.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ]
+      },
+      "invalid": {
+        "difference_pp": 0.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ]
+      },
+      "system_correct": {
+        "difference_pp": -10.0,
+        "bootstrap_95_ci_pp": [
+          -30.0,
+          0.0
+        ]
+      },
+      "system_target": {
+        "difference_pp": 0.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "attacked": {
+      "correct": {
+        "difference_pp": -4.0,
+        "bootstrap_95_ci_pp": [
+          -10.0,
+          0.0
+        ]
+      },
+      "target_adoptions": {
+        "difference_pp": 2.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          6.000000000000001
+        ]
+      },
+      "invalid": {
+        "difference_pp": 0.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ]
+      },
+      "system_correct": {
+        "difference_pp": 0.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ]
+      },
+      "system_target": {
+        "difference_pp": 0.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "attacked_vaccinated": {
+      "correct": {
+        "difference_pp": -6.000000000000001,
+        "bootstrap_95_ci_pp": [
+          -15.999999999999998,
+          0.0
+        ]
+      },
+      "target_adoptions": {
+        "difference_pp": 6.000000000000001,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          15.999999999999998
+        ]
+      },
+      "invalid": {
+        "difference_pp": 0.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ]
+      },
+      "system_correct": {
+        "difference_pp": -10.0,
+        "bootstrap_95_ci_pp": [
+          -30.0,
+          0.0
+        ]
+      },
+      "system_target": {
+        "difference_pp": 10.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          30.0
+        ]
+      }
+    },
+    "clean_vaccinated": {
+      "correct": {
+        "difference_pp": -4.0,
+        "bootstrap_95_ci_pp": [
+          -12.000000000000002,
+          0.0
+        ]
+      },
+      "target_adoptions": {
+        "difference_pp": 0.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ]
+      },
+      "invalid": {
+        "difference_pp": 0.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ]
+      },
+      "system_correct": {
+        "difference_pp": 0.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ]
+      },
+      "system_target": {
+        "difference_pp": 0.0,
+        "bootstrap_95_ci_pp": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "interpretation": "Paired continuation of the same trajectories, not an independent replication; development/pilot questions only."
+}

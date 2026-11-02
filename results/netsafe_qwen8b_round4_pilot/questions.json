@@ -1,0 +1,222 @@
+[
+  {
+    "id": "bca9a7adc72ff09f432626e11a5b7c60",
+    "question": "The producer told them to take out the scene with full nudity, this was because PG-13 only allowed for what kind of nudity?",
+    "question_concept": "full",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "close fitting",
+        "tight",
+        "empty",
+        "incomplete",
+        "partial"
+      ]
+    },
+    "answerKey": "E"
+  },
+  {
+    "id": "1fbd6d755e87937222fb26fedc890105",
+    "question": "Humans who want a sweet snack can do this instead of having candy?",
+    "question_concept": "humans",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "compete with each other",
+        "eat fruit",
+        "lay eggs",
+        "eat burgers",
+        "draw pictures"
+      ]
+    },
+    "answerKey": "B"
+  },
+  {
+    "id": "9cdc71eb5fc6b8b76b4768564ea3fe1e",
+    "question": "He was eating too much and the doctors warned him, what was his condition?",
+    "question_concept": "eating too much",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "gain weight",
+        "obesity",
+        "getting fit",
+        "getting sick",
+        "gas"
+      ]
+    },
+    "answerKey": "B"
+  },
+  {
+    "id": "48abc2c113623fd72f758502529f93a5",
+    "question": "By learning about the world, many poor college students gain what?",
+    "question_concept": "learning about world",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "pleasure",
+        "greater mobility",
+        "desire to travel",
+        "global warming",
+        "increased security"
+      ]
+    },
+    "answerKey": "C"
+  },
+  {
+    "id": "af88f4abd14bfb50bf2c25b2e776cac6",
+    "question": "What handle did the man grab to when he wanted a snack?",
+    "question_concept": "handle",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "fridge",
+        "hardware store",
+        "frying pan",
+        "water fountain",
+        "drawer"
+      ]
+    },
+    "answerKey": "A"
+  },
+  {
+    "id": "ec38d0b8fb149c59fedac941c19cf132",
+    "question": "Where is it especially important to keep a dry, clean floor?",
+    "question_concept": "floor",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "bed",
+        "restaurant",
+        "synagogue",
+        "wedding",
+        "all buildings"
+      ]
+    },
+    "answerKey": "B"
+  },
+  {
+    "id": "cdb06b28b9c4e7ef7e880d1f096fd409",
+    "question": "When a person with mental illness receives medication and therapy, what has happened?",
+    "question_concept": "mental illness",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "cause irrational behaviour",
+        "recur",
+        "effectively treated",
+        "managed",
+        "cause suffering"
+      ]
+    },
+    "answerKey": "C"
+  },
+  {
+    "id": "c8572fed046f532f7cd9ad124cfba2e4",
+    "question": "The man was playfully wrestling with a woman he was enamored with, what was the physiological result?",
+    "question_concept": "wrestling",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "competition",
+        "blood",
+        "wins",
+        "medals",
+        "erections"
+      ]
+    },
+    "answerKey": "E"
+  },
+  {
+    "id": "e083efae35fb0b47d55005e29ea6150e",
+    "question": "As everybody at the table began to twirl noodles she mentioned that wine was he secret ingredient in the what?",
+    "question_concept": "wine",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "liquor store",
+        "church",
+        "museum",
+        "spaghetti sauce",
+        "art show"
+      ]
+    },
+    "answerKey": "D"
+  },
+  {
+    "id": "a68c4f61d877bbe323ea4f8f04240a1f",
+    "question": "They're living conditions put restrictions on their pet ownership, they only had a small dog because they lived where?",
+    "question_concept": "small dog",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "small apartment",
+        "backyard",
+        "big house",
+        "living room",
+        "mansion"
+      ]
+    },
+    "answerKey": "A"
+  }
+]

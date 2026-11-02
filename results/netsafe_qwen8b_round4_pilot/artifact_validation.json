@@ -1,0 +1,16 @@
+{
+  "prefix_identical": true,
+  "prefix_logical_responses": 720,
+  "logical_responses": 1200,
+  "upstream_format_responses": 1200,
+  "report_local_links_valid": true,
+  "sha256": {
+    "config.json": "6404da0ad48d02c3139bce9d7454e7ce1218057c7ca8bb79082f82d586c50d7d",
+    "summary.json": "431e3da41222db3ee3b1bf471b73fa3153363e6d8acba2e4782b91757c4cc55d",
+    "summary_runtime.json": "d08c3b3be08c596353d0a4865dcb7bcfe1f5da0ac831d7a5eae1771b2902ea09",
+    "extension_comparison.json": "bba209b4d0b798331418d1be894d3f8239c190988d6ddfd87a6a2f4c73738256",
+    "trajectories.jsonl": "9fccc6a3490293db39634b575df01e1eda79475eee7172f9c5171c116b621bde",
+    "generation_cache.jsonl": "7c8dc72801cf2d9670fe5cd5164f0d5a4c6f6a83a4e0ebce04e7551303f29586",
+    "report_zh.md": "adf2ded65e0985b0fa4caeca0dae997dd5e2c10af9009ab8d512c579228ac82c"
+  }
+}
