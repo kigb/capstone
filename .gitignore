@@ -29,3 +29,8 @@ models/
 .idea/
 .vscode/
 *.swp
+
+# The confirmation runner archives these exact records as .jsonl.gz on completion.
+results/netsafe_confirmation_qwen8b/evaluation.jsonl
+results/netsafe_confirmation_qwen8b/generation_cache.jsonl
+results/netsafe_confirmation_qwen8b/*.tmp

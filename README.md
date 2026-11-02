@@ -23,6 +23,18 @@
 
 ![固定预算比较](results/netsafe_placement_qwen8b/placement_comparison.png)
 
+## 30 道新题确认实验
+
+后续确认实验使用同一 8B 模型、8 节点图、4 轮讨论和 k=2，沿用冻结的 Behavior 评分；新抽取 30 道此前所有实验都未使用的题目。新增 Degree-uniform 对照，枚举全部合法 Degree top-2 集合并在每道题内平均。主要比较预先固定为 Behavior 与 Degree-uniform 的最终攻击目标采纳率差。详见 [冻结协议](experiments/confirmation_protocol.md)。
+
+```bash
+python scripts/run_placement_confirmation.py --prepare-only
+python -u scripts/run_placement_confirmation.py
+.analysis-venv/bin/python scripts/analyze_placement_confirmation.py
+```
+
+默认输出目录为 `results/netsafe_confirmation_qwen8b/`。中断后使用同一目录恢复；若要独立重复，使用新的 `--output` 路径。30 道题及随机种子固定，重复执行不增加独立测试题数量。完成后原始轨迹和缓存无损压缩为 `.jsonl.gz`，分析脚本直接读取压缩文件。
+
 ## 两轮模型 pilot
 
 两次运行使用相同的 10 道 CSQA、6 节点树、攻击位置和目标选项；每次都是 4 个条件、初始回答加 2 轮讨论，共 720 个逻辑回答。每组最终评价 5 个普通节点，共 50 个答案。
