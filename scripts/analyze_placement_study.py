@@ -268,9 +268,11 @@ def plots(root, protocol, summary, scores, graph):
     example = summary["placement_sets_by_source"][0]
     colors = ["#c66d76" if n == 0 else "#2a927c" if n in set(example["degree"]) & set(example["betweenness"]) else "#e2a043" if n in example["degree"] else "#9076b1" if n in example["betweenness"] else "#d5dce3" for n in graph]
     nx.draw_networkx(graph, positions, ax=axes[0], node_color=colors, node_size=650, font_size=10, edge_color="#aab3bc")
-    axes[0].set_title("Source 0 example: degree {1,2}; betweenness {2,5}")
+    nx.draw_networkx_nodes(graph, positions, nodelist=example["behavior"], ax=axes[0],
+                           node_color="none", node_size=850, edgecolors="#2466a3", linewidths=2)
+    axes[0].set_title(f"Source 0: degree {example['degree']}; betweenness {example['betweenness']}\nBehavior {example['behavior']}")
     axes[0].axis("off")
-    axes[0].text(.5, -.02, "Red: source; green: both; gold: degree; purple: betweenness", transform=axes[0].transAxes, ha="center", fontsize=8)
+    axes[0].text(.5, -.02, "Red: source; green: degree + betweenness; gold: degree; purple: betweenness\nBlue ring: behavior", transform=axes[0].transAxes, ha="center", fontsize=8)
     x = np.arange(len(scores))
     axes[1].bar(x - .18, [s["opportunities"] for s in scores], .36, label="Weighted exposure opportunities", color="#8196bd")
     axes[1].bar(x + .18, [s["adoptions"] for s in scores], .36, label="Weighted downstream adoptions", color="#2a927c")

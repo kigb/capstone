@@ -1,0 +1,12 @@
+test_evaluation_data_rejected_for_fitting (test_placement.PlacementTests.test_evaluation_data_rejected_for_fitting) ... ok
+test_graph_and_budget_controls (test_placement.PlacementTests.test_graph_and_budget_controls) ... ok
+test_invalid_states_are_not_negative_adoption_evidence (test_placement.PlacementTests.test_invalid_states_are_not_negative_adoption_evidence) ... ok
+test_random_draws_average_within_task (test_placement.PlacementTests.test_random_draws_average_within_task) ... ok
+test_rate_ranking_uses_supported_behavior (test_placement.PlacementTests.test_rate_ranking_uses_supported_behavior) ... ok
+test_scoring_and_strict_majority (test_placement.PlacementTests.test_scoring_and_strict_majority) ... ok
+test_shared_exposure_and_attacker_exclusion (test_placement.PlacementTests.test_shared_exposure_and_attacker_exclusion) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+OK

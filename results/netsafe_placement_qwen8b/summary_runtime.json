@@ -1,0 +1,42 @@
+{
+  "started_utc": "2026-11-02T03:59:02.319509+00:00",
+  "completed_utc": "2026-11-02T08:34:20.588726+00:00",
+  "wall_seconds": 16518.269230713602,
+  "model_load_seconds": 85.74444930301979,
+  "logical_generations": 7600,
+  "unique_generations": 5148,
+  "cache_entries_including_unused": 5148,
+  "cached_at_start": 0,
+  "new_generations_this_run": 5148,
+  "generated_batches": 165,
+  "unique_input_tokens": 4620429,
+  "unique_output_tokens": 830270,
+  "unique_truncated_generations": 0,
+  "peak_torch_allocated_gib": 26.451215744018555,
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "gpu": "NVIDIA GB10",
+  "platform": "Linux-7.0.0-1019-nvidia-aarch64-with-glibc2.39",
+  "torch": "2.10.0+cu130",
+  "torch_cuda": "13.0",
+  "transformers": "4.57.6",
+  "numpy": "2.5.3",
+  "effective_generation": {
+    "do_sample": false,
+    "num_beams": 1,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 50,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 512,
+    "use_model_defaults": false,
+    "mode": "greedy_search"
+  },
+  "source_sha256": {
+    "run_placement_study.py": "6c55bf347b92d251e78fc629273500fac7965818bc6f585fc040023b4d28aafc",
+    "run_local_baseline.py": "64af7cb3bcbd731e8cb8e99214124a1ae2310dd8a677eaa5127775f0d1ab2fe7",
+    "placement_common.py": "9f0bdfd141a241f20a2608db8d977aa0ce31e16a68dbe86f04bb8ab9a3328aca",
+    "netsafe_metrics.py": "d1f0a256d1844e9d205bff2f268217039d2ddd9ca6e5391c8a7d2776dd7d22f6"
+  },
+  "protocol_sha256": "05d495a69341f5a6ba51b12dcec46ba48ca2eb498837467854388675edbeec70",
+  "behavior_model_sha256": "e60249057c9d1aefb6e5a21c86c067a55183f185f1662ba6eb9735e6e8711860"
+}

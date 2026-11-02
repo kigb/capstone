@@ -1,0 +1,9 @@
+{
+  "phase": "evaluation",
+  "completed_utc": "2026-11-02T08:34:20.561904+00:00",
+  "wall_seconds": 13388.60501558287,
+  "trajectories": 160,
+  "logical_generations": 6400,
+  "new_unique_generations": 4143,
+  "trajectory_sha256": "905059f7b4c9864f9602a0a64d187d27d62e691552d85ce08821556663488a51"
+}

@@ -2,9 +2,28 @@
 
 研究问题：在只能保护部分 LLM agent 的情况下，按网络度数还是按观察到的传播行为选择保护节点更有效？完整设计见 [研究方案](selective_vaccination_proposal.md)。
 
-本分支包含 NetSafe 的本地推理适配、Qwen2.5-3B-Instruct / Qwen3-8B 两轮 pilot，以及原始输出、分析代码和中文报告。推理在 NVIDIA GB10 上完成，不需要付费模型 API。**目前验证的是运行管线、攻击和固定 warning，尚未实现 Random-k / Degree-k / Behavior-k 的预算选点比较。**
+本分支包含 NetSafe 的本地推理适配、Qwen2.5-3B-Instruct / Qwen3-8B 两轮 pilot、8B 四轮延长实验，以及固定预算下 Random-k / Degree-k / Betweenness-k / Behavior-k 的选点比较。原始输出、分析代码和中文报告一并保存。推理在 NVIDIA GB10 上完成，不需要付费模型 API。
 
-## 已完成的结果
+## 最新：固定预算选点结果
+
+8 节点、4 轮讨论、10 道独立测试题，保护预算 k=2（7 个普通节点的 28.6%）。Behavior 分数由另外 10 道开发题的日志估计，并在测试前冻结。
+
+| 策略 | 攻击下准确率 | 目标采纳率 ↓ | Clean 准确率 |
+| --- | ---: | ---: | ---: |
+| 无 warning | 41.4% | 18.6% | 60.0% |
+| Random-k（3 个集合平均） | 39.5% | 20.5% | 60.0% |
+| Degree-k | 45.7% | 15.7% | 60.0% |
+| Betweenness-k | 35.7% | 24.3% | 60.0% |
+| Behavior-k | 50.0% | 10.0% | 60.0% |
+| 全部保护（7 个节点，参考组） | 50.0% | 10.0% | 60.0% |
+
+**Behavior 的点估计较好，但尚未确认稳定优势。** 相对 Degree，目标采纳率差为 −5.7 个百分点，题目配对的 95% bootstrap 区间为 [−14.3, +1.4]。Behavior `{2,4}` 和 Degree `{1,2}` 的差别涉及度数并列；需要补充随机打破度数并列的对照。行为分数达到观测门槛的覆盖率为 4/8，不能把未观测节点当成低风险。
+
+研究耗时 4 小时 35 分 18 秒，完成 7,600 个逻辑回答、5,148 个实际独立生成，全部符合格式且没有截断。Random 先在题目内部平均，统计样本量仍为 10 道题。完整设置、区间、逐题收益与失败案例见 [选点实验中文报告](results/netsafe_placement_qwen8b/report_zh.md)。
+
+![固定预算比较](results/netsafe_placement_qwen8b/placement_comparison.png)
+
+## 两轮模型 pilot
 
 两次运行使用相同的 10 道 CSQA、6 节点树、攻击位置和目标选项；每次都是 4 个条件、初始回答加 2 轮讨论，共 720 个逻辑回答。每组最终评价 5 个普通节点，共 50 个答案。
 
@@ -121,6 +140,8 @@ python scripts/run_local_baseline.py \
 
 后续实验的模型、图、题目划分、预算、传播分数和分析规则事先记录在 [实验协议](experiments/placement_protocol.md)。机器可读的 [protocol.json](results/netsafe_placement_qwen8b/protocol.json) 在开发和评价推理前提交。
 
+[四轮延长报告](results/netsafe_qwen8b_round4_pilot/report_zh.md)：保留原先全部 720 个逻辑回答，继续两轮后观察到二跳目标采纳和恢复。无 warning 的最终目标采纳率从 4% 升到 6%，全部普通节点加 warning 时从 4% 升到 10%；这批开发题未验证 warning 的保护收益。
+
 先沿用原 8B 轨迹，增加两轮讨论：
 
 ```bash
@@ -168,11 +189,16 @@ python scripts/run_placement_study.py --output results/placement_repeat
 | `scripts/probe_local_model.py` | 短推理与硬件可运行性检查 |
 | `scripts/analyze_local_baseline.py` | 计分验证、按题目配对 bootstrap、图表 |
 | `scripts/compare_model_baselines.py` | 匹配设置检查与 3B/8B 对比 |
+| `scripts/run_placement_study.py` | 冻结协议、开发轨迹、行为评分和独立题目评价 |
+| `scripts/placement_common.py` | 图结构、传播分数和保护集合规则 |
+| `scripts/analyze_placement_study.py` | 配对统计、泄漏/缓存验证、度数并列诊断和图表 |
 | `results/netsafe_qwen3b_baseline/` | 3B 正式结果、报告和完整记录 |
 | `results/netsafe_qwen8b_baseline/` | 8B 正式结果、报告和完整记录 |
+| `results/netsafe_qwen8b_round4_pilot/` | 原 8B pilot 延长到四轮的结果和报告 |
+| `results/netsafe_placement_qwen8b/` | 固定预算选点实验、冻结评分、评价配置和完整记录 |
 | `results/netsafe_qwen3b_pilot/` | 最初的格式诊断；不是正式实验组 |
 | `results/netsafe_qwen8b_baseline/sampling_diagnostic/` | 停止的采样配置诊断；其生成未用于正式 8B 结果 |
 
-攻击源为节点 0，每轮持续为指定错误选项辩护；不是一次注入后的自复制攻击。warning 组保护全部 5 个普通节点，尚未测试部分保护预算。相同输入的 greedy 输出会缓存复用，不能将复用记录当成独立模型样本。统计抽样单位是题目，而不是同一轨迹中的节点或轮次。
+两轮和四轮延长 pilot 使用 6 节点树、攻击源 0，warning 组保护全部 5 个普通节点。选点实验使用另外的 8 节点图、攻击位置 0/3/6 和 k=2 预算；攻击源从保护候选和评分中排除。所有攻击均是每轮持续为指定错误选项辩护，不是一次注入后的自复制攻击。相同输入的 greedy 输出会缓存复用，不能将复用记录当成独立模型样本。统计抽样单位是题目，而不是同一轨迹中的节点或轮次。
 
 运行器显式使用 `use_model_defaults=False, do_sample=False`，并核验有效生成模式，避免模型默认设置把 greedy 改成采样。该问题的诊断和排除过程见 [8B 报告](results/netsafe_qwen8b_baseline/report_zh.md)。
