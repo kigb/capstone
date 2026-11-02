@@ -262,10 +262,13 @@ def main():
     parser.add_argument("--seed", type=int, default=20261101)
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--max-new-tokens", type=int, default=512)
+    parser.add_argument("--discussion-rounds", type=int, default=2)
     parser.add_argument("--prepare-only", action="store_true")
     parser.add_argument("--parser-mode", choices=("strict", "tolerant"), default="tolerant")
     parser.add_argument("--reuse-generations-from", type=Path)
     args = parser.parse_args()
+    if args.discussion_rounds < 0:
+        parser.error("--discussion-rounds must be nonnegative")
     args.output.mkdir(parents=True, exist_ok=True)
     runtime, prompts = upstream_runtime()
     rows = [ast.literal_eval(line) for line in (UPSTREAM / "dataset/csqa.jsonl").read_text().splitlines() if line.strip()]
@@ -283,7 +286,7 @@ def main():
         "sampled_ids": [r["id"] for r in selected], "target_answers": targets,
         "graph": "upstream tree", "adjacency": adjacency.tolist(), "num_agents": 6,
         "attacker_node": 0, "evaluation_nodes": [1, 2, 3, 4, 5],
-        "vaccinated_nodes": [1, 2, 3, 4, 5], "discussion_rounds": 2,
+        "vaccinated_nodes": [1, 2, 3, 4, 5], "discussion_rounds": args.discussion_rounds,
         "conditions": list(CONDITIONS), "vaccine": VACCINE,
         "dtype": "bfloat16", "attention": "sdpa", "do_sample": False,
         "max_new_tokens": args.max_new_tokens, "batch_size": args.batch_size,
@@ -308,10 +311,17 @@ def main():
         raise ValueError("Completed run already exists; use a new output directory")
     if args.reuse_generations_from and not (args.output / "generation_cache.jsonl").exists():
         old_config = json.loads((args.reuse_generations_from / "config.json").read_text())
+        old_rounds = old_config.pop("discussion_rounds")
         old_config.pop("parser_mode", None)
-        comparable = {key: value for key, value in config.items() if key != "parser_mode"}
+        comparable = {key: value for key, value in config.items() if key not in ("parser_mode", "discussion_rounds")}
         if old_config != comparable:
-            raise ValueError("Only parser differences are permitted when reusing generations")
+            raise ValueError("Only parser differences and additional rounds are permitted when reusing generations")
+        if args.discussion_rounds < old_rounds:
+            raise ValueError("Cannot shorten a run when importing its generation cache")
+        if args.discussion_rounds != old_rounds:
+            source_runtime = json.loads((args.reuse_generations_from / "summary_runtime.json").read_text())
+            if source_runtime.get("effective_generation", {}).get("mode") != "greedy_search":
+                raise ValueError("Round extension requires a completed, verified greedy source run")
         imported = 0
         with (args.output / "generation_cache.jsonl").open("w", encoding="utf-8") as stream:
             for line in (args.reuse_generations_from / "generation_cache.jsonl").read_text().splitlines():
@@ -351,7 +361,7 @@ def main():
             for agent in graph.Agents:
                 agent.probe_records = []
             trajectories.append((condition, row, graph))
-    for round_index in range(3):
+    for round_index in range(args.discussion_rounds + 1):
         for _, _, graph in trajectories:
             if round_index == 0:
                 graph.first_generate()
@@ -384,7 +394,7 @@ def main():
     summary = {
         "started_utc": started_utc, "completed_utc": utc_now(),
         "wall_seconds": time.perf_counter() - started,
-        "model_load_seconds": backend.load_seconds, "logical_generations": len(trajectories) * 6 * 3,
+        "model_load_seconds": backend.load_seconds, "logical_generations": len(trajectories) * 6 * (args.discussion_rounds + 1),
         "unique_generations": len(used_keys), "cache_entries_including_unused": len(backend.cache),
         "cached_at_start": backend.cached_at_start,
         "used_imported_generations": sum("imported_from" in x for x in used_entries),

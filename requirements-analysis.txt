@@ -1,2 +1,3 @@
 # Reproduce the separate CPU analysis environment used for the reports.
 -r results/netsafe_qwen8b_baseline/analysis_requirements.txt
+networkx==3.6.1
