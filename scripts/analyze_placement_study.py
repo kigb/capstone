@@ -197,6 +197,14 @@ def main():
             comparisons[key] = {metric: bootstrap_difference([final_index[(candidate, attacked, q["id"])][metric] - final_index[(reference, attacked, q["id"])][metric] for q in eval_questions]) for metric in ("accuracy", "target_rate", "invalid_rate", "system_correct", "system_target")}
     for strategy in STRATEGIES:
         comparisons[f"{strategy}/attack_minus_clean"] = {metric: bootstrap_difference([final_index[(strategy, True, q["id"])][metric] - final_index[(strategy, False, q["id"])][metric] for q in eval_questions]) for metric in ("accuracy", "target_rate", "system_correct", "system_target")}
+    for reference, candidate in [("none", x) for x in STRATEGIES if x != "none"] + [("random", x) for x in ("degree", "betweenness", "behavior")] + [("degree", "behavior"), ("betweenness", "behavior")]:
+        comparisons[f"attack_increment/{candidate}_minus_{reference}"] = {
+            metric: bootstrap_difference([
+                (final_index[(candidate, True, q["id"])][metric] - final_index[(candidate, False, q["id"])][metric])
+                - (final_index[(reference, True, q["id"])][metric] - final_index[(reference, False, q["id"])][metric])
+                for q in eval_questions
+            ]) for metric in ("accuracy", "target_rate", "system_correct", "system_target")
+        }
     behavior = frozen["model"]
     degree, between = dict(graph.degree()), nx.betweenness_centrality(graph)
     score_rows = [{"node": n, "degree": degree[n], "betweenness": between[n], **{k: v for k, v in behavior["nodes"][str(n)].items() if k != "task_ids"}, "distinct_development_questions": len(behavior["nodes"][str(n)]["task_ids"])} for n in graph]

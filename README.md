@@ -117,6 +117,49 @@ python scripts/run_local_baseline.py \
 
 分析命令会重写指定目录中的统计与图表；原始轨迹与生成缓存不会改变。
 
+## 四轮延长与固定预算选点实验
+
+后续实验的模型、图、题目划分、预算、传播分数和分析规则事先记录在 [实验协议](experiments/placement_protocol.md)。机器可读的 [protocol.json](results/netsafe_placement_qwen8b/protocol.json) 在开发和评价推理前提交。
+
+先沿用原 8B 轨迹，增加两轮讨论：
+
+```bash
+python scripts/run_local_baseline.py \
+  --model Qwen/Qwen3-8B \
+  --revision b968826d9c46dd6066d109eabc6255188de91218 \
+  --disable-thinking --discussion-rounds 4 \
+  --reuse-generations-from results/netsafe_qwen8b_baseline \
+  --output results/qwen8b_round4_repeat
+
+.analysis-venv/bin/python scripts/analyze_local_baseline.py \
+  --input results/qwen8b_round4_repeat
+.analysis-venv/bin/python scripts/analyze_round_extension.py \
+  --extended results/qwen8b_round4_repeat
+```
+
+选点实验使用固定 8 节点图、4 轮讨论和 k=2 的保护预算（7 个可保护普通节点的 28.6%）。比较 Random-k（3 个随机集合）、Degree-k、Betweenness-k、Behavior-k，以及无防御和全部保护参考组；每个集合都配对 clean/attack。开发集是先前 10 道 pilot 题 × 3 个攻击位置，评价集为 10 道不重叠的新题。详细分数定义、覆盖不足处理和限制以协议为准。
+
+```bash
+# 配置预检，不加载模型
+python scripts/run_placement_study.py --prepare-only --output results/placement_repeat
+
+# 顺序执行开发、冻结 Behavior 分数、评价；中断后可用同一目录恢复缓存
+python scripts/run_placement_study.py --output results/placement_repeat
+
+.analysis-venv/bin/python scripts/analyze_placement_study.py \
+  --input results/placement_repeat
+```
+
+也可以用 `--phase development` 和 `--phase evaluation` 分阶段执行。运行器要求评价前已有完整开发结果，并保存冻结分数及每个条件的保护集合。重复执行使用同一套固定题目，不构成新的独立测试集。
+
+规则测试：
+
+```bash
+.analysis-venv/bin/python -m unittest discover -s tests -v
+```
+
+测试覆盖攻击源排除、多发送者曝光分摊、无效输出、评价数据禁止用于拟合、预算一致性、行为证据不足时的明确 fallback，以及随机集合在题目内部的平均。两组历史结果另做了分析回归检查，统计保持不变。
+
 ## 文件与实验口径
 
 | 路径 | 内容 |
