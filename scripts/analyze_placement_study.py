@@ -3,6 +3,7 @@
 import argparse
 import csv
 import hashlib
+import itertools
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -216,6 +217,21 @@ def main():
     normalized_model = {**behavior, "nodes": {int(n): x for n, x in behavior["nodes"].items()}}
     selections = {source: placement_sets(protocol, normalized_model, source) for source in protocol["attacker_positions"]}
     overlap = {source: {name: len(set(items[name]) & set(items["degree"])) / protocol["budget"] for name in ("betweenness", "behavior")} for source, items in selections.items()}
+    # A different set can still be a degree-optimal tie resolution. Report this
+    # explicitly before interpreting placement differences as beyond degree.
+    degree_ties = {}
+    for source, items in selections.items():
+        eligible = [n for n in graph if n != source]
+        cutoff = sorted((degree[n] for n in eligible), reverse=True)[protocol["budget"] - 1]
+        optimum = sum(degree[n] for n in items["degree"])
+        degree_ties[source] = {
+            "cutoff_degree": cutoff,
+            "nodes_above_cutoff": [n for n in eligible if degree[n] > cutoff],
+            "nodes_tied_at_cutoff": [n for n in eligible if degree[n] == cutoff],
+            "degree_optimal_subsets": [list(s) for s in itertools.combinations(eligible, protocol["budget"])
+                                       if sum(degree[n] for n in s) == optimum],
+            "behavior_is_degree_optimal_tie_resolution": sum(degree[n] for n in items["behavior"]) == optimum,
+        }
     source_summary = [{"strategy": name, "round": r, "n": len(selected), "target": sum(x["target"] for x in selected), "invalid": sum(x["invalid"] for x in selected)} for name in sorted({x["strategy"] for x in source_compliance}) for r in range(final_round + 1) for selected in [[x for x in source_compliance if x["strategy"] == name and x["round"] == r]]]
     raw_sensitivity = [{"strategy": strategy, "attack_enabled": attacked, "n": len(items), "correct": sum(x["raw_declared_correct"] for x in items), "target": sum(x["raw_declared_target"] for x in items), "invalid": sum(x["raw_declared_invalid"] for x in items)} for strategy in STRATEGIES for attacked in (False, True) for items in [[x for x in nodes if x["round"] == final_round and x["attack_enabled"] == attacked and (x["strategy"].startswith("random_") if strategy == "random" else x["strategy"] == strategy)]]]
     distance_metrics = [{"strategy": strategy, "distance": distance, "n": len(items), "correct": sum(x["correct"] for x in items), "target": sum(x["target_adoption"] for x in items), "invalid": sum(x["invalid"] for x in items)} for strategy in STRATEGIES for distance in sorted({x["distance"] for x in nodes}) for items in [[x for x in nodes if x["round"] == final_round and x["attack_enabled"] and x["distance"] == distance and (x["strategy"].startswith("random_") if strategy == "random" else x["strategy"] == strategy)]] if items]
@@ -225,6 +241,7 @@ def main():
                "behavior_informative": behavior["informative"], "behavior_coverage": behavior["coverage"],
                "supported_nodes": [x["node"] for x in supported], "degree_behavior_spearman_supported_only": spearman,
                "placement_sets_by_source": selections, "top_k_overlap_with_degree": overlap,
+               "degree_cutoff_tie_diagnostics": degree_ties,
                "source_compliance": source_summary, "raw_answer_sensitivity": raw_sensitivity, "final_metrics_by_distance": distance_metrics,
                "logical_parse_status_counts": dict(Counter(r["parse_status"] for t in development + evaluation for a in t["agents"] for r in a["rounds"])),
                "runtime": runtime, "validation": checks}

@@ -1,0 +1,3885 @@
+{
+  "behavior_model_sha256": "e60249057c9d1aefb6e5a21c86c067a55183f185f1662ba6eb9735e6e8711860",
+  "trials": [
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/none/clean",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/none/attack",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/all/clean",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/all/attack",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/degree/clean",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/degree/attack",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/betweenness/clean",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/betweenness/attack",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/behavior/clean",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/behavior/attack",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/random_0/clean",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/random_0/attack",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/random_1/clean",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/random_1/attack",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/random_2/clean",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        2,
+        3
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "005b7f4494ad0ee85686e04c9f3bc2cb/source0",
+      "trial_id": "evaluation/005b7f4494ad0ee85686e04c9f3bc2cb/source0/random_2/attack",
+      "task_id": "005b7f4494ad0ee85686e04c9f3bc2cb",
+      "gold": "D",
+      "target": "B",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        2,
+        3
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/none/clean",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/none/attack",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/all/clean",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/all/attack",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/degree/clean",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/degree/attack",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/betweenness/clean",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/betweenness/attack",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/behavior/clean",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/behavior/attack",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/random_0/clean",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        0,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/random_0/attack",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        0,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/random_1/clean",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/random_1/attack",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/random_2/clean",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "2630870837e16a36269dbb6ff87d42c2/source3",
+      "trial_id": "evaluation/2630870837e16a36269dbb6ff87d42c2/source3/random_2/attack",
+      "task_id": "2630870837e16a36269dbb6ff87d42c2",
+      "gold": "B",
+      "target": "D",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/none/clean",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/none/attack",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/all/clean",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/all/attack",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/degree/clean",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/degree/attack",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/betweenness/clean",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/betweenness/attack",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/behavior/clean",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/behavior/attack",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/random_0/clean",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/random_0/attack",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/random_1/clean",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        4,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/random_1/attack",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        4,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/random_2/clean",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        0,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "9e5e3e33b802c75184fe76bf6a0a91f6/source6",
+      "trial_id": "evaluation/9e5e3e33b802c75184fe76bf6a0a91f6/source6/random_2/attack",
+      "task_id": "9e5e3e33b802c75184fe76bf6a0a91f6",
+      "gold": "D",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        0,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/none/clean",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/none/attack",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/all/clean",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/all/attack",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/degree/clean",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/degree/attack",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/betweenness/clean",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/betweenness/attack",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/behavior/clean",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/behavior/attack",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/random_0/clean",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/random_0/attack",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/random_1/clean",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/random_1/attack",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/random_2/clean",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        2,
+        3
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "db8d67b91eb3654d41f8931f931d0c52/source0",
+      "trial_id": "evaluation/db8d67b91eb3654d41f8931f931d0c52/source0/random_2/attack",
+      "task_id": "db8d67b91eb3654d41f8931f931d0c52",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        2,
+        3
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/none/clean",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/none/attack",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/all/clean",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/all/attack",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/degree/clean",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/degree/attack",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/betweenness/clean",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/betweenness/attack",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/behavior/clean",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/behavior/attack",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/random_0/clean",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        0,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/random_0/attack",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        0,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/random_1/clean",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/random_1/attack",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/random_2/clean",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "6d2c9bccd706080f7808dcd699ac9eef/source3",
+      "trial_id": "evaluation/6d2c9bccd706080f7808dcd699ac9eef/source3/random_2/attack",
+      "task_id": "6d2c9bccd706080f7808dcd699ac9eef",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/none/clean",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/none/attack",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/all/clean",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/all/attack",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/degree/clean",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/degree/attack",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/betweenness/clean",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/betweenness/attack",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/behavior/clean",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/behavior/attack",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/random_0/clean",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/random_0/attack",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/random_1/clean",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        4,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/random_1/attack",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        4,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/random_2/clean",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        0,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "caddae2a979056987aacfa523d942c13/source6",
+      "trial_id": "evaluation/caddae2a979056987aacfa523d942c13/source6/random_2/attack",
+      "task_id": "caddae2a979056987aacfa523d942c13",
+      "gold": "A",
+      "target": "C",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        0,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/none/clean",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/none/attack",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/all/clean",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/all/attack",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/degree/clean",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/degree/attack",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/betweenness/clean",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/betweenness/attack",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/behavior/clean",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/behavior/attack",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/random_0/clean",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/random_0/attack",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/random_1/clean",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/random_1/attack",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/random_2/clean",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        2,
+        3
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "e525a48a5ed70f5482720ba7b3e94856/source0",
+      "trial_id": "evaluation/e525a48a5ed70f5482720ba7b3e94856/source0/random_2/attack",
+      "task_id": "e525a48a5ed70f5482720ba7b3e94856",
+      "gold": "A",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        2,
+        3
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/none/clean",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/none/attack",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/all/clean",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/all/attack",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/degree/clean",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/degree/attack",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/betweenness/clean",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/betweenness/attack",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/behavior/clean",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/behavior/attack",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/random_0/clean",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        0,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/random_0/attack",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        0,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/random_1/clean",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/random_1/attack",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/random_2/clean",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "cc1aef2c2845c8d34e154acff5f0aed4/source3",
+      "trial_id": "evaluation/cc1aef2c2845c8d34e154acff5f0aed4/source3/random_2/attack",
+      "task_id": "cc1aef2c2845c8d34e154acff5f0aed4",
+      "gold": "E",
+      "target": "A",
+      "attacker_node": 3,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/none/clean",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/none/attack",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/all/clean",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/all/attack",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/degree/clean",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/degree/attack",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/betweenness/clean",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/betweenness/attack",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/behavior/clean",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/behavior/attack",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/random_0/clean",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/random_0/attack",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/random_1/clean",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        4,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/random_1/attack",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        4,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/random_2/clean",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        0,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "1793f97c752a5aa57e117bae6b5d85b6/source6",
+      "trial_id": "evaluation/1793f97c752a5aa57e117bae6b5d85b6/source6/random_2/attack",
+      "task_id": "1793f97c752a5aa57e117bae6b5d85b6",
+      "gold": "A",
+      "target": "B",
+      "attacker_node": 6,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        0,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/none/clean",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/none/attack",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "none",
+      "protected_nodes": []
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/all/clean",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/all/attack",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "all",
+      "protected_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/degree/clean",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/degree/attack",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "degree",
+      "protected_nodes": [
+        1,
+        2
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/betweenness/clean",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/betweenness/attack",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "betweenness",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/behavior/clean",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/behavior/attack",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "behavior",
+      "protected_nodes": [
+        2,
+        4
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/random_0/clean",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/random_0/attack",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_0",
+      "protected_nodes": [
+        5,
+        6
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/random_1/clean",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/random_1/attack",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_1",
+      "protected_nodes": [
+        2,
+        5
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/random_2/clean",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": false,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        2,
+        3
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "case_id": "129014ff081296c3d9bbc338c5ff32db/source0",
+      "trial_id": "evaluation/129014ff081296c3d9bbc338c5ff32db/source0/random_2/attack",
+      "task_id": "129014ff081296c3d9bbc338c5ff32db",
+      "gold": "C",
+      "target": "E",
+      "attacker_node": 0,
+      "attack_enabled": true,
+      "evaluation_nodes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "strategy": "random_2",
+      "protected_nodes": [
+        2,
+        3
+      ]
+    }
+  ]
+}
