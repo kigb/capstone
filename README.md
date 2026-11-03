@@ -2,38 +2,51 @@
 
 研究问题：在只能保护部分 LLM agent 的情况下，按网络度数还是按观察到的传播行为选择保护节点更有效？完整设计见 [研究方案](selective_vaccination_proposal.md)。
 
-本分支包含 NetSafe 的本地推理适配、Qwen2.5-3B-Instruct / Qwen3-8B 两轮 pilot、8B 四轮延长实验，以及固定预算下 Random-k / Degree-k / Betweenness-k / Behavior-k 的选点比较。原始输出、分析代码和中文报告一并保存。推理在 NVIDIA GB10 上完成，不需要付费模型 API。
+本分支包含 NetSafe 的本地推理适配、Qwen2.5-3B-Instruct / Qwen3-8B 两轮 pilot、8B 四轮延长实验、固定预算选点研究，以及补齐度数并列对照的 30 道新题确认实验。原始输出、分析代码和中文报告一并保存。推理在 NVIDIA GB10 上完成，不需要付费模型 API。
 
-## 最新：固定预算选点结果
+## 最新：30 道新题确认结果
 
-8 节点、4 轮讨论、10 道独立测试题，保护预算 k=2（7 个普通节点的 28.6%）。Behavior 分数由另外 10 道开发题的日志估计，并在测试前冻结。
+同一 Qwen3-8B 模型、8 节点图、4 轮讨论、k=2（7 个普通节点的 28.6%），使用 30 道此前所有实验都未使用的题目。Behavior 原样沿用旧开发集得到的冻结评分。新增 Degree-uniform：枚举全部合法 Degree top-2 集合，先在每题内平均，再对题目等权平均。
 
 | 策略 | 攻击下准确率 | 目标采纳率 ↓ | Clean 准确率 |
 | --- | ---: | ---: | ---: |
-| 无 warning | 41.4% | 18.6% | 60.0% |
-| Random-k（3 个集合平均） | 39.5% | 20.5% | 60.0% |
-| Degree-k | 45.7% | 15.7% | 60.0% |
-| Betweenness-k | 35.7% | 24.3% | 60.0% |
-| Behavior-k | 50.0% | 10.0% | 60.0% |
-| 全部保护（7 个节点，参考组） | 50.0% | 10.0% | 60.0% |
+| 无 warning | 61.4% | 21.9% | 70.0% |
+| Random-k（3 个集合平均） | 66.8% | 14.6% | 71.0% |
+| Degree-k（按 ID 处理并列） | 64.3% | 16.2% | 70.0% |
+| Degree-uniform | 66.7% | 15.6% | 71.1% |
+| Betweenness-k | 68.1% | 12.4% | 69.5% |
+| **Behavior-k** | **66.7%** | **17.1%** | **70.0%** |
+| 全部保护（7 个节点，参考组） | 66.7% | 10.5% | 71.0% |
 
-**Behavior 的点估计较好，但尚未确认稳定优势。** 相对 Degree，目标采纳率差为 −5.7 个百分点，题目配对的 95% bootstrap 区间为 [−14.3, +1.4]。Behavior `{2,4}` 和 Degree `{1,2}` 的差别涉及度数并列；需要补充随机打破度数并列的对照。行为分数达到观测门槛的覆盖率为 4/8，不能把未观测节点当成低风险。
+**本轮未确认 Behavior 优于度数选点。** 预先指定的主要比较为 Behavior − Degree-uniform 的目标采纳率差：**+1.59 个百分点，95% 配对 bootstrap 区间 [−2.54, +6.43]**。30 题中 1 题较低、24 题相同、5 题较高。区间跨 0，不能据此确认 Behavior 更好、更差或两者等效。
 
-研究耗时 4 小时 35 分 18 秒，完成 7,600 个逻辑回答、5,148 个实际独立生成，全部符合格式且没有截断。Random 先在题目内部平均，统计样本量仍为 10 道题。完整设置、区间、逐题收益与失败案例见 [选点实验中文报告](results/netsafe_placement_qwen8b/report_zh.md)。
+两者最终 clean 目标率均为 6.67%，扣除各自配对 clean 后，攻击增量的比较仍为 +1.59 个百分点。Behavior 的评分观测覆盖仍为 4/8 节点；本轮只增加未见题目，没有更换图、预算或攻击源位置。
 
-![固定预算比较](results/netsafe_placement_qwen8b/placement_comparison.png)
+运行耗时 **11 小时 14 分 58 秒**，完成 25,600 个逻辑回答、13,150 个不同输入的实际生成，全部符合上游格式且没有截断。独立统计单位是 30 道题。12 项规则测试及完整数据审计通过。主要结论、全部基线、clean 控制、收益与失败轨迹见 **[30 题确认实验中文报告](results/netsafe_confirmation_qwen8b/report_zh.md)**。
 
-## 30 道新题确认实验
+![30 题确认结果](results/netsafe_confirmation_qwen8b/confirmation_comparison.png)
 
-后续确认实验使用同一 8B 模型、8 节点图、4 轮讨论和 k=2，沿用冻结的 Behavior 评分；新抽取 30 道此前所有实验都未使用的题目。新增 Degree-uniform 对照，枚举全部合法 Degree top-2 集合并在每道题内平均。主要比较预先固定为 Behavior 与 Degree-uniform 的最终攻击目标采纳率差。详见 [冻结协议](experiments/confirmation_protocol.md)。
+仅复核已完成结果，不需要 GPU：
 
 ```bash
-python scripts/run_placement_confirmation.py --prepare-only
-python -u scripts/run_placement_confirmation.py
 .analysis-venv/bin/python scripts/analyze_placement_confirmation.py
 ```
 
-默认输出目录为 `results/netsafe_confirmation_qwen8b/`。中断后使用同一目录恢复；若要独立重复，使用新的 `--output` 路径。30 道题及随机种子固定，重复执行不增加独立测试题数量。完成后原始轨迹和缓存无损压缩为 `.jsonl.gz`，分析脚本直接读取压缩文件。
+独立重跑使用新目录；协议详见 [冻结协议](experiments/confirmation_protocol.md)：
+
+```bash
+python scripts/run_placement_confirmation.py --prepare-only --output results/confirmation_repeat
+python -u scripts/run_placement_confirmation.py --output results/confirmation_repeat
+.analysis-venv/bin/python scripts/analyze_placement_confirmation.py --input results/confirmation_repeat
+```
+
+中断后使用同一目录恢复。30 道题及随机种子固定，重复执行不增加独立测试题数量。完成后原始轨迹和缓存无损压缩为 `.jsonl.gz`，分析脚本直接读取压缩文件。默认目录 `results/netsafe_confirmation_qwen8b/` 已完成，运行器会拒绝覆盖。
+
+## 前期：10 题探索性选点实验
+
+此前 10 道测试题中，Behavior、Degree-ID、Random、Betweenness 的目标采纳率分别为 10.0%、15.7%、20.5%、24.3%。Behavior − Degree-ID 为 −5.7 个百分点，95% 区间 [−14.3, +1.4]。两者保护集合涉及度数并列，因此开展了上述确认实验；新一批题没有复现这一正向点估计。
+
+前期研究耗时 4 小时 35 分 18 秒，原始结果完整保留，见 [10 题探索性实验报告](results/netsafe_placement_qwen8b/report_zh.md)。它不与新的 30 题合并为确认结果。
 
 ## 两轮模型 pilot
 
@@ -191,7 +204,7 @@ python scripts/run_placement_study.py --output results/placement_repeat
 .analysis-venv/bin/python -m unittest discover -s tests -v
 ```
 
-测试覆盖攻击源排除、多发送者曝光分摊、无效输出、评价数据禁止用于拟合、预算一致性、行为证据不足时的明确 fallback，以及随机集合在题目内部的平均。两组历史结果另做了分析回归检查，统计保持不变。
+12 项测试覆盖攻击源排除、多发送者曝光分摊、无效输出、评价数据禁止用于拟合、预算一致性、行为证据不足时的明确 fallback、随机集合在题目内部的平均，以及新题排除、度数并列枚举与等权平均、别名去重和压缩恢复。历史原始结果保持不变。
 
 ## 文件与实验口径
 
@@ -204,10 +217,14 @@ python scripts/run_placement_study.py --output results/placement_repeat
 | `scripts/run_placement_study.py` | 冻结协议、开发轨迹、行为评分和独立题目评价 |
 | `scripts/placement_common.py` | 图结构、传播分数和保护集合规则 |
 | `scripts/analyze_placement_study.py` | 配对统计、泄漏/缓存验证、度数并列诊断和图表 |
+| `scripts/run_placement_confirmation.py` | 冻结新题确认实验、运行旧评分及完整度数并列对照 |
+| `scripts/confirmation_common.py` | 新题划分、度数并列集合、题目等权平均及无损归档 |
+| `scripts/analyze_placement_confirmation.py` | 确认实验审计、主要配对比较、clean 增量和图表 |
 | `results/netsafe_qwen3b_baseline/` | 3B 正式结果、报告和完整记录 |
 | `results/netsafe_qwen8b_baseline/` | 8B 正式结果、报告和完整记录 |
 | `results/netsafe_qwen8b_round4_pilot/` | 原 8B pilot 延长到四轮的结果和报告 |
 | `results/netsafe_placement_qwen8b/` | 固定预算选点实验、冻结评分、评价配置和完整记录 |
+| `results/netsafe_confirmation_qwen8b/` | 30 道新题确认结果、完整并列对照、压缩记录和报告 |
 | `results/netsafe_qwen3b_pilot/` | 最初的格式诊断；不是正式实验组 |
 | `results/netsafe_qwen8b_baseline/sampling_diagnostic/` | 停止的采样配置诊断；其生成未用于正式 8B 结果 |
 
