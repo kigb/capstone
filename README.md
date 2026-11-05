@@ -4,7 +4,17 @@
 
 本分支包含 NetSafe 的本地推理适配、Qwen2.5-3B-Instruct / Qwen3-8B 两轮 pilot、8B 四轮延长实验、固定预算选点研究，以及补齐度数并列对照的 30 道新题确认实验。原始输出、分析代码和中文报告一并保存。推理在 NVIDIA GB10 上完成，不需要付费模型 API。
 
-## 最新：30 道新题确认结果
+## 追加实验：三种保护策略与两档预算
+
+追加 NTI（攻击源距离）、Coverage（邻域覆盖）和 Vulnerability（开发集采纳频率）选点，比较 k=2/3，并保留原先的结构和行为对照。使用 12 道未见题目，配置与评价规则在推理前固定。详见 [追加实验协议](experiments/protection_extension_protocol.md)。论文对照采用已核验的 [NetSafe Table 1 数值](experiments/netsafe_paper_reference.json)，区分 MJA 与目标采纳率，并注明不同实验设置。
+
+```bash
+python scripts/run_protection_extension.py --prepare-only --output results/protection_repeat
+python -u scripts/run_protection_extension.py --output results/protection_repeat
+.analysis-venv/bin/python scripts/analyze_protection_extension.py --input results/protection_repeat
+```
+
+## 30 道新题确认结果
 
 同一 Qwen3-8B 模型、8 节点图、4 轮讨论、k=2（7 个普通节点的 28.6%），使用 30 道此前所有实验都未使用的题目。Behavior 原样沿用旧开发集得到的冻结评分。新增 Degree-uniform：枚举全部合法 Degree top-2 集合，先在每题内平均，再对题目等权平均。
 

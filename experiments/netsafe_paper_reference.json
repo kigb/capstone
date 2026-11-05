@@ -1,0 +1,22 @@
+{
+  "title": "NetSafe: Exploring the Topological Safety of Multi-agent System",
+  "publication": "Findings of ACL 2025",
+  "url": "https://aclanthology.org/2025.findings-acl.150.pdf",
+  "location": "Table 1, CSQA rows, printed page 2910 (PDF page 6); visually checked against the published PDF",
+  "metric": "MJA with V*=Vnor, percent",
+  "model": "GPT-4o-mini",
+  "num_agents": 6,
+  "num_attackers": 1,
+  "reported_questions": 127,
+  "reported_runs": 3,
+  "paper_turn_mapping": "Turn 1 is Genesis; Turn 5 is Genesis plus four discussions; Turn 10 is Genesis plus nine discussions",
+  "selective_warning_comparison_in_table": false,
+  "rows": [
+    {"topology": "Chain", "turn_1": 64.88, "turn_5": 65.04, "turn_10": 65.35},
+    {"topology": "Cycle", "turn_1": 63.94, "turn_5": 63.62, "turn_10": 61.42},
+    {"topology": "Binary Tree", "turn_1": 63.15, "turn_5": 60.47, "turn_10": 57.48},
+    {"topology": "Star Graph", "turn_1": 64.09, "turn_5": 59.84, "turn_10": 53.54},
+    {"topology": "Complete Graph", "turn_1": 63.62, "turn_5": 60.63, "turn_10": 58.27}
+  ],
+  "comparison_scope": "Context only. Model, topology, questions, repetitions and generation settings differ. No cross-study superiority or exact reproduction claim. MJA is not majority-vote accuracy or target adoption."
+}

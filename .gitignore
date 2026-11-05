@@ -34,3 +34,8 @@ models/
 results/netsafe_confirmation_qwen8b/evaluation.jsonl
 results/netsafe_confirmation_qwen8b/generation_cache.jsonl
 results/netsafe_confirmation_qwen8b/*.tmp
+
+# Additional protection pilot uses the same lossless archive convention.
+results/netsafe_protection_extension_qwen8b/evaluation.jsonl
+results/netsafe_protection_extension_qwen8b/generation_cache.jsonl
+results/netsafe_protection_extension_qwen8b/*.tmp

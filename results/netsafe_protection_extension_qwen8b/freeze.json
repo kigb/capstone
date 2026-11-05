@@ -1,0 +1,10 @@
+{
+  "protocol_sha256": "da5f56b202624435ad2f69388970269df245e2e30819d27ed84d3dd5ef719ab7",
+  "artifact_sha256": {
+    "behavior_model.json": "e60249057c9d1aefb6e5a21c86c067a55183f185f1662ba6eb9735e6e8711860",
+    "vulnerability_model.json": "fef0bde96229acca1872c0ce74d149409b7def277e09aeae1ed1e77e46e107e9",
+    "evaluation_questions.json": "7f3752a429f9c475270d2a7724f9778972ef70e312f7ca2f43941c8a0ca6988f",
+    "evaluation_manifest.json": "e03bf69bfb1f380a148db5a5cad4c32b9d1d34a99b1359b6d9935552fe4b9f24"
+  },
+  "frozen_at_utc": "2026-11-05T13:53:03.593284+00:00"
+}
