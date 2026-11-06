@@ -1,0 +1,236 @@
+{
+  "method": "Raw declared answer fields, exact rational counts, within-question averages; separate index-based bootstrap calculation.",
+  "final_accuracy_and_target_rates_match": true,
+  "all_six_planned_contrasts_match": true,
+  "planned_candidate_clean_target_rates_equal_reference_for_each_question": true,
+  "comparisons": [
+    {
+      "budget": 2,
+      "method": "nti",
+      "difference_exact_fraction": "-1/21",
+      "difference_pp": -4.761904761904762,
+      "bootstrap_95_ci_pp": [
+        -9.920634920634921,
+        0.0
+      ],
+      "question_ids": [
+        "28a3c9697ac46549dfe9f58d2b23f73c",
+        "aaac3a907ce186aa60b9679373b7624d",
+        "fe73c5623d2ef8bf2731ac48307307aa",
+        "4dad724418440a65c1d1fca4e4b90cf9",
+        "10eeb43da5af757483ec29f01e563ae8",
+        "04eedd14df3ad3f297d09e08e706b92b",
+        "66c71537256943b46455991b28f58055",
+        "9557031f56c8aa1aca2cae6c9335e8c4",
+        "f6c7af45800a2767315600a827848621",
+        "592ba23bd4fd115bedd46f02f8671ea8",
+        "f8e3a28ebe889a2117786dd956866780",
+        "3103b516c20cc38288bb70dc6a19e452"
+      ],
+      "per_question_exact_fraction": [
+        "0",
+        "0",
+        "0",
+        "-4/21",
+        "-5/21",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1/7",
+        "0"
+      ]
+    },
+    {
+      "budget": 2,
+      "method": "coverage",
+      "difference_exact_fraction": "1/28",
+      "difference_pp": 3.571428571428571,
+      "bootstrap_95_ci_pp": [
+        -8.333333333333332,
+        20.634920634920636
+      ],
+      "question_ids": [
+        "28a3c9697ac46549dfe9f58d2b23f73c",
+        "aaac3a907ce186aa60b9679373b7624d",
+        "fe73c5623d2ef8bf2731ac48307307aa",
+        "4dad724418440a65c1d1fca4e4b90cf9",
+        "10eeb43da5af757483ec29f01e563ae8",
+        "04eedd14df3ad3f297d09e08e706b92b",
+        "66c71537256943b46455991b28f58055",
+        "9557031f56c8aa1aca2cae6c9335e8c4",
+        "f6c7af45800a2767315600a827848621",
+        "592ba23bd4fd115bedd46f02f8671ea8",
+        "f8e3a28ebe889a2117786dd956866780",
+        "3103b516c20cc38288bb70dc6a19e452"
+      ],
+      "per_question_exact_fraction": [
+        "0",
+        "0",
+        "0",
+        "-4/21",
+        "-5/21",
+        "0",
+        "1/7",
+        "0",
+        "6/7",
+        "0",
+        "-1/7",
+        "0"
+      ]
+    },
+    {
+      "budget": 2,
+      "method": "vulnerability",
+      "difference_exact_fraction": "1/28",
+      "difference_pp": 3.571428571428571,
+      "bootstrap_95_ci_pp": [
+        -7.5396825396825395,
+        20.238095238095237
+      ],
+      "question_ids": [
+        "28a3c9697ac46549dfe9f58d2b23f73c",
+        "aaac3a907ce186aa60b9679373b7624d",
+        "fe73c5623d2ef8bf2731ac48307307aa",
+        "4dad724418440a65c1d1fca4e4b90cf9",
+        "10eeb43da5af757483ec29f01e563ae8",
+        "04eedd14df3ad3f297d09e08e706b92b",
+        "66c71537256943b46455991b28f58055",
+        "9557031f56c8aa1aca2cae6c9335e8c4",
+        "f6c7af45800a2767315600a827848621",
+        "592ba23bd4fd115bedd46f02f8671ea8",
+        "f8e3a28ebe889a2117786dd956866780",
+        "3103b516c20cc38288bb70dc6a19e452"
+      ],
+      "per_question_exact_fraction": [
+        "0",
+        "0",
+        "0",
+        "-1/21",
+        "-5/21",
+        "0",
+        "0",
+        "0",
+        "6/7",
+        "0",
+        "-1/7",
+        "0"
+      ]
+    },
+    {
+      "budget": 3,
+      "method": "nti",
+      "difference_exact_fraction": "-1/84",
+      "difference_pp": -1.1904761904761905,
+      "bootstrap_95_ci_pp": [
+        -5.158730158730159,
+        1.984126984126984
+      ],
+      "question_ids": [
+        "28a3c9697ac46549dfe9f58d2b23f73c",
+        "aaac3a907ce186aa60b9679373b7624d",
+        "fe73c5623d2ef8bf2731ac48307307aa",
+        "4dad724418440a65c1d1fca4e4b90cf9",
+        "10eeb43da5af757483ec29f01e563ae8",
+        "04eedd14df3ad3f297d09e08e706b92b",
+        "66c71537256943b46455991b28f58055",
+        "9557031f56c8aa1aca2cae6c9335e8c4",
+        "f6c7af45800a2767315600a827848621",
+        "592ba23bd4fd115bedd46f02f8671ea8",
+        "f8e3a28ebe889a2117786dd956866780",
+        "3103b516c20cc38288bb70dc6a19e452"
+      ],
+      "per_question_exact_fraction": [
+        "0",
+        "0",
+        "0",
+        "2/21",
+        "-1/21",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-4/21",
+        "0"
+      ]
+    },
+    {
+      "budget": 3,
+      "method": "coverage",
+      "difference_exact_fraction": "1/84",
+      "difference_pp": 1.1904761904761905,
+      "bootstrap_95_ci_pp": [
+        -4.365079365079364,
+        7.142857142857142
+      ],
+      "question_ids": [
+        "28a3c9697ac46549dfe9f58d2b23f73c",
+        "aaac3a907ce186aa60b9679373b7624d",
+        "fe73c5623d2ef8bf2731ac48307307aa",
+        "4dad724418440a65c1d1fca4e4b90cf9",
+        "10eeb43da5af757483ec29f01e563ae8",
+        "04eedd14df3ad3f297d09e08e706b92b",
+        "66c71537256943b46455991b28f58055",
+        "9557031f56c8aa1aca2cae6c9335e8c4",
+        "f6c7af45800a2767315600a827848621",
+        "592ba23bd4fd115bedd46f02f8671ea8",
+        "f8e3a28ebe889a2117786dd956866780",
+        "3103b516c20cc38288bb70dc6a19e452"
+      ],
+      "per_question_exact_fraction": [
+        "0",
+        "0",
+        "0",
+        "2/21",
+        "-1/21",
+        "0",
+        "2/7",
+        "0",
+        "0",
+        "0",
+        "-4/21",
+        "0"
+      ]
+    },
+    {
+      "budget": 3,
+      "method": "vulnerability",
+      "difference_exact_fraction": "2/21",
+      "difference_pp": 9.523809523809524,
+      "bootstrap_95_ci_pp": [
+        -3.571428571428571,
+        27.38095238095238
+      ],
+      "question_ids": [
+        "28a3c9697ac46549dfe9f58d2b23f73c",
+        "aaac3a907ce186aa60b9679373b7624d",
+        "fe73c5623d2ef8bf2731ac48307307aa",
+        "4dad724418440a65c1d1fca4e4b90cf9",
+        "10eeb43da5af757483ec29f01e563ae8",
+        "04eedd14df3ad3f297d09e08e706b92b",
+        "66c71537256943b46455991b28f58055",
+        "9557031f56c8aa1aca2cae6c9335e8c4",
+        "f6c7af45800a2767315600a827848621",
+        "592ba23bd4fd115bedd46f02f8671ea8",
+        "f8e3a28ebe889a2117786dd956866780",
+        "3103b516c20cc38288bb70dc6a19e452"
+      ],
+      "per_question_exact_fraction": [
+        "0",
+        "0",
+        "0",
+        "-1/21",
+        "20/21",
+        "0",
+        "0",
+        "0",
+        "3/7",
+        "0",
+        "-4/21",
+        "0"
+      ]
+    }
+  ]
+}

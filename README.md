@@ -2,11 +2,38 @@
 
 研究问题：在只能保护部分 LLM agent 的情况下，按网络度数还是按观察到的传播行为选择保护节点更有效？完整设计见 [研究方案](selective_vaccination_proposal.md)。
 
-本分支包含 NetSafe 的本地推理适配、Qwen2.5-3B-Instruct / Qwen3-8B 两轮 pilot、8B 四轮延长实验、固定预算选点研究，以及补齐度数并列对照的 30 道新题确认实验。原始输出、分析代码和中文报告一并保存。推理在 NVIDIA GB10 上完成，不需要付费模型 API。
+本分支包含 NetSafe 的本地推理适配、Qwen2.5-3B-Instruct / Qwen3-8B 两轮 pilot、8B 四轮延长实验、固定预算选点研究、30 道新题确认实验，以及三种追加策略与两档预算的 12 道新题实验。原始输出、分析代码和中文报告一并保存。推理在 NVIDIA GB10 上完成，不需要付费模型 API。
 
 ## 追加实验：三种保护策略与两档预算
 
 追加 NTI（攻击源距离）、Coverage（邻域覆盖）和 Vulnerability（开发集采纳频率）选点，比较 k=2/3，并保留原先的结构和行为对照。使用 12 道未见题目，配置与评价规则在推理前固定。详见 [追加实验协议](experiments/protection_extension_protocol.md)。论文对照采用已核验的 [NetSafe Table 1 数值](experiments/netsafe_paper_reference.json)，区分 MJA 与目标采纳率，并注明不同实验设置。
+
+**已完成。NTI 在 k=2 有正向信号，但尚未确认稳定优势；Behavior 和新增的 Vulnerability 均未显示优于度数选点。** 下表为攻击下最终目标采纳率，越低越好：
+
+| 方法 | k=2 | k=3 |
+| --- | ---: | ---: |
+| Random | 22.62% | 22.22% |
+| Degree-ID | 19.05% | 22.62% |
+| Degree-uniform | 22.62% | 25.00% |
+| Betweenness | 20.24% | 22.62% |
+| Behavior | 29.76% | 26.19% |
+| NTI | 17.86% | 23.81% |
+| Coverage | 26.19% | 26.19% |
+| Vulnerability | 26.19% | 34.52% |
+
+NTI k=2 − Degree-uniform 为 **−4.76 个百分点，95% 配对区间 [−9.92, 0.00]**，12 题中 3 题更低、9 题相同。六个预定比较的区间均未作多重比较校正。保护更多节点没有普遍改善结果；全部七个普通节点加 warning 时，clean 准确率从无保护的 50.00% 降至 41.67%。这些是另一批新题，不能与下方旧实验的原始百分比直接作优劣比较。
+
+本轮耗时 **9 小时 36 分 39 秒**，24,000 个逻辑回答、10,901 次实际生成，零截断，18 项规则测试通过。完整结果、六个比较、clean 增量、成功与失败轨迹及论文对照见 **[追加保护实验中文报告](results/netsafe_protection_extension_qwen8b/report_zh.md)**。
+
+![追加保护策略结果](results/netsafe_protection_extension_qwen8b/protection_comparison.png)
+
+仅复核结果，无需 GPU：
+
+```bash
+.analysis-venv/bin/python scripts/analyze_protection_extension.py
+```
+
+独立重跑使用新目录：
 
 ```bash
 python scripts/run_protection_extension.py --prepare-only --output results/protection_repeat
@@ -214,7 +241,7 @@ python scripts/run_placement_study.py --output results/placement_repeat
 .analysis-venv/bin/python -m unittest discover -s tests -v
 ```
 
-12 项测试覆盖攻击源排除、多发送者曝光分摊、无效输出、评价数据禁止用于拟合、预算一致性、行为证据不足时的明确 fallback、随机集合在题目内部的平均，以及新题排除、度数并列枚举与等权平均、别名去重和压缩恢复。历史原始结果保持不变。
+18 项测试覆盖攻击源排除、多发送者曝光分摊、无效输出、评价数据禁止用于拟合、预算一致性、行为证据不足时的明确 fallback、随机集合在题目内部的平均、新题排除、度数并列枚举与等权平均、别名去重和压缩恢复，以及新增的风险评分、距离/覆盖选点与跨预算嵌套随机集合。历史原始结果保持不变。
 
 ## 文件与实验口径
 
@@ -230,11 +257,15 @@ python scripts/run_placement_study.py --output results/placement_repeat
 | `scripts/run_placement_confirmation.py` | 冻结新题确认实验、运行旧评分及完整度数并列对照 |
 | `scripts/confirmation_common.py` | 新题划分、度数并列集合、题目等权平均及无损归档 |
 | `scripts/analyze_placement_confirmation.py` | 确认实验审计、主要配对比较、clean 增量和图表 |
+| `scripts/run_protection_extension.py` | 三种追加策略和两档预算的冻结、运行与无损归档 |
+| `scripts/protection_common.py` | NTI、Coverage、Vulnerability、预算选择与新题规则 |
+| `scripts/analyze_protection_extension.py` | 六个预定比较、预算效果、完整审计和论文对照 |
 | `results/netsafe_qwen3b_baseline/` | 3B 正式结果、报告和完整记录 |
 | `results/netsafe_qwen8b_baseline/` | 8B 正式结果、报告和完整记录 |
 | `results/netsafe_qwen8b_round4_pilot/` | 原 8B pilot 延长到四轮的结果和报告 |
 | `results/netsafe_placement_qwen8b/` | 固定预算选点实验、冻结评分、评价配置和完整记录 |
 | `results/netsafe_confirmation_qwen8b/` | 30 道新题确认结果、完整并列对照、压缩记录和报告 |
+| `results/netsafe_protection_extension_qwen8b/` | 12 道新题、三种追加策略、两档预算结果和论文对照报告 |
 | `results/netsafe_qwen3b_pilot/` | 最初的格式诊断；不是正式实验组 |
 | `results/netsafe_qwen8b_baseline/sampling_diagnostic/` | 停止的采样配置诊断；其生成未用于正式 8B 结果 |
 

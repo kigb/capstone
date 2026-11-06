@@ -1,0 +1,63 @@
+{
+  "started_utc": "2026-11-05T13:54:09.374443+00:00",
+  "completed_utc": "2026-11-05T23:30:48.358142+00:00",
+  "wall_seconds": 34598.98371654283,
+  "model_load_seconds": 91.67581792827696,
+  "archive_seconds": 1.8678966742008924,
+  "timing_scope": "wall_seconds covers this invocation; cached_at_start discloses resume; total_cached_batch_compute_seconds includes every recorded generation batch.",
+  "total_cached_batch_compute_seconds": 34491.37127644522,
+  "logical_generations": 24000,
+  "named_trajectories": 600,
+  "distinct_condition_trajectories": 432,
+  "unique_generations": 10901,
+  "cache_entries_including_unused": 10901,
+  "cached_at_start": 0,
+  "new_generations_this_run": 10901,
+  "generated_batches": 342,
+  "unique_input_tokens": 10124174,
+  "unique_output_tokens": 1734658,
+  "unique_truncated_generations": 0,
+  "peak_torch_allocated_gib": 27.009957313537598,
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "gpu": "NVIDIA GB10",
+  "platform": "Linux-7.0.0-1019-nvidia-aarch64-with-glibc2.39",
+  "torch": "2.10.0+cu130",
+  "torch_cuda": "13.0",
+  "transformers": "4.57.6",
+  "numpy": "2.5.3",
+  "effective_generation": {
+    "do_sample": false,
+    "num_beams": 1,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 50,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 512,
+    "use_model_defaults": false,
+    "mode": "greedy_search"
+  },
+  "source_sha256": {
+    "run_protection_extension.py": "9d9d25bf3127598b0f2179eb76d50b7afa26c62b09c8e09a91ec341f2defdde0",
+    "protection_common.py": "dde30c1fd478a6e8bdfbc3c529df66968c91f328046f1c22991a828287e11e0a",
+    "confirmation_common.py": "5a9be0007b21842ee93657f8e2ecc3c32da43de99819904a32d5a5367d3b632c",
+    "run_placement_study.py": "6c55bf347b92d251e78fc629273500fac7965818bc6f585fc040023b4d28aafc",
+    "run_local_baseline.py": "64af7cb3bcbd731e8cb8e99214124a1ae2310dd8a677eaa5127775f0d1ab2fe7",
+    "placement_common.py": "9f0bdfd141a241f20a2608db8d977aa0ce31e16a68dbe86f04bb8ab9a3328aca",
+    "netsafe_metrics.py": "d1f0a256d1844e9d205bff2f268217039d2ddd9ca6e5391c8a7d2776dd7d22f6"
+  },
+  "protocol_sha256": "da5f56b202624435ad2f69388970269df245e2e30819d27ed84d3dd5ef719ab7",
+  "frozen_artifact_sha256": {
+    "behavior_model.json": "e60249057c9d1aefb6e5a21c86c067a55183f185f1662ba6eb9735e6e8711860",
+    "vulnerability_model.json": "fef0bde96229acca1872c0ce74d149409b7def277e09aeae1ed1e77e46e107e9",
+    "evaluation_questions.json": "7f3752a429f9c475270d2a7724f9778972ef70e312f7ca2f43941c8a0ca6988f",
+    "evaluation_manifest.json": "e03bf69bfb1f380a148db5a5cad4c32b9d1d34a99b1359b6d9935552fe4b9f24"
+  },
+  "uncompressed_jsonl_sha256": {
+    "evaluation.jsonl": "01eca7cadfa527b3afd34b0b31f45aa1d142a40507c0aec6456d65e59dafc521",
+    "generation_cache.jsonl": "54d01471fd996cd66425fcf8e74ceb7519f501f102c9dc14e002d26ea9f8137a"
+  },
+  "archive_sha256": {
+    "evaluation.jsonl.gz": "fc5eb07e552153b7887071917f9a7db98dbfb4865e75ad1cbf830670a5a06c97",
+    "generation_cache.jsonl.gz": "841091a6bc4cda8eab7b9c20c87d1ebc5057ff9c8d053ddb98d2fea2c17ea26e"
+  }
+}
