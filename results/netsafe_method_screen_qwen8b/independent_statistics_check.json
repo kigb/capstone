@@ -1,0 +1,80 @@
+{
+  "method": "Raw declared answers, exact Fraction arithmetic, ties within source/case then sources within question then four equal-weight questions.",
+  "all_90_round_condition_groups_match": true,
+  "all_six_prespecified_contrasts_match": true,
+  "independent_questions": 4,
+  "contrasts": [
+    {
+      "candidate": "risk_product",
+      "reference": "degree_uniform",
+      "mean_target_difference_fraction": "-17/504",
+      "clean_adjusted_mean_difference_fraction": "-17/504",
+      "per_question_differences": {
+        "afaeda3da1a3a4ea1979e92e5707eda0": "-1/14",
+        "617b6cbc0ad6a7bf3f44b7f49b69466a": "0",
+        "c1f08b6e8fc0b7f3a3f8d702f87f42cf": "-4/63",
+        "2cbb483c1aad2a99103a123ecbc17772": "0"
+      }
+    },
+    {
+      "candidate": "edge_flow",
+      "reference": "degree_uniform",
+      "mean_target_difference_fraction": "-17/504",
+      "clean_adjusted_mean_difference_fraction": "-17/504",
+      "per_question_differences": {
+        "afaeda3da1a3a4ea1979e92e5707eda0": "-1/14",
+        "617b6cbc0ad6a7bf3f44b7f49b69466a": "0",
+        "c1f08b6e8fc0b7f3a3f8d702f87f42cf": "-4/63",
+        "2cbb483c1aad2a99103a123ecbc17772": "0"
+      }
+    },
+    {
+      "candidate": "edge_cover",
+      "reference": "degree_uniform",
+      "mean_target_difference_fraction": "-17/504",
+      "clean_adjusted_mean_difference_fraction": "-17/504",
+      "per_question_differences": {
+        "afaeda3da1a3a4ea1979e92e5707eda0": "-1/14",
+        "617b6cbc0ad6a7bf3f44b7f49b69466a": "0",
+        "c1f08b6e8fc0b7f3a3f8d702f87f42cf": "-4/63",
+        "2cbb483c1aad2a99103a123ecbc17772": "0"
+      }
+    },
+    {
+      "candidate": "uniform_cover",
+      "reference": "degree_uniform",
+      "mean_target_difference_fraction": "-17/504",
+      "clean_adjusted_mean_difference_fraction": "-17/504",
+      "per_question_differences": {
+        "afaeda3da1a3a4ea1979e92e5707eda0": "-1/14",
+        "617b6cbc0ad6a7bf3f44b7f49b69466a": "0",
+        "c1f08b6e8fc0b7f3a3f8d702f87f42cf": "-4/63",
+        "2cbb483c1aad2a99103a123ecbc17772": "0"
+      }
+    },
+    {
+      "candidate": "intervention_ridge",
+      "reference": "degree_uniform",
+      "mean_target_difference_fraction": "-17/504",
+      "clean_adjusted_mean_difference_fraction": "-17/504",
+      "per_question_differences": {
+        "afaeda3da1a3a4ea1979e92e5707eda0": "-1/14",
+        "617b6cbc0ad6a7bf3f44b7f49b69466a": "0",
+        "c1f08b6e8fc0b7f3a3f8d702f87f42cf": "-4/63",
+        "2cbb483c1aad2a99103a123ecbc17772": "0"
+      }
+    },
+    {
+      "candidate": "edge_cover",
+      "reference": "uniform_cover",
+      "mean_target_difference_fraction": "0",
+      "clean_adjusted_mean_difference_fraction": "0",
+      "per_question_differences": {
+        "afaeda3da1a3a4ea1979e92e5707eda0": "0",
+        "617b6cbc0ad6a7bf3f44b7f49b69466a": "0",
+        "c1f08b6e8fc0b7f3a3f8d702f87f42cf": "0",
+        "2cbb483c1aad2a99103a123ecbc17772": "0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+candidate,reference,independent_questions,target_difference_pp,clean_adjusted_difference_pp,accuracy_difference_pp,clean_accuracy_difference_pp,questions_lower,questions_equal,questions_higher
+risk_product,degree_uniform,4,-3.3730158730158726,-3.3730158730158726,3.373015873015872,0.0,2,2,0
+edge_flow,degree_uniform,4,-3.3730158730158726,-3.3730158730158726,3.373015873015872,0.0,2,2,0
+edge_cover,degree_uniform,4,-3.3730158730158726,-3.3730158730158726,3.373015873015872,0.0,2,2,0
+uniform_cover,degree_uniform,4,-3.3730158730158726,-3.3730158730158726,3.373015873015872,0.0,2,2,0
+intervention_ridge,degree_uniform,4,-3.3730158730158726,-3.3730158730158726,3.373015873015872,0.0,2,2,0
+edge_cover,uniform_cover,4,0.0,0.0,0.0,0.0,0,4,0

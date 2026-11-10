@@ -209,20 +209,22 @@ def plot(root, metrics, per_question, questions):
     fig.savefig(root/"method_comparison.png", dpi=180); fig.savefig(root/"method_comparison.pdf"); plt.close(fig)
     rows = {(r["method"], r["task_id"]): r for r in per_question if r["round"] == 4 and r["attack_enabled"]}
     matrix = np.array([[100*rows[m,q["id"]]["target_rate"] for q in questions] for m in METHODS])
-    fig, ax = plt.subplots(figsize=(7,6), constrained_layout=True)
+    fig, ax = plt.subplots(figsize=(8,6), constrained_layout=True)
     im = ax.imshow(matrix, vmin=0, vmax=100, cmap="YlOrRd")
     for i in range(len(METHODS)):
         for j in range(4): ax.text(j,i,f"{matrix[i,j]:.1f}",ha="center",va="center",color="white" if matrix[i,j]>65 else "black")
     ax.set_yticks(range(len(METHODS)), [NAMES[m] for m in METHODS]); ax.set_xticks(range(4), [f"Q{i+1}" for i in range(4)])
-    ax.set_title("Target adoption (%) by question, averaged over 3 matched sources")
+    ax.set_title("Target adoption by question (%)\nEach question averaged over 3 matched sources", fontsize=11)
     fig.colorbar(im, ax=ax); fig.savefig(root/"per_question.png",dpi=180);fig.savefig(root/"per_question.pdf");plt.close(fig)
 
 
 def report(root, s, questions, model):
     final = {(r["method"], r["attack_enabled"]): r for r in s["metrics"] if r["round"] == 4}
     rt=s["runtime"]; hours=int(rt["wall_seconds"]//3600); minutes=int(rt["wall_seconds"]%3600//60)
-    lines = ["# 新方法小规模筛选：Qwen3-8B", "", "本轮已完成。**只有四道独立新题，以下均为探索性描述，不确认获胜方法。** 每道题在攻击源 0、3、6 上分别运行，相同错误目标、相同 warning、预算 k=2，初始回答加四轮讨论。", "",
+    notes = (root/"interpretation_zh.md").read_text().strip() if (root/"interpretation_zh.md").exists() else ""
+    lines = ["# 新方法小规模筛选：Qwen3-8B", "", "本轮已完成。**只有四道独立新题，以下均为探索性描述，不确认获胜方法。** 沿用八节点 ER 图，评价七个普通节点，保护其中两个；攻击源不受保护也不计分。每道题在攻击源 0、3、6 上分别运行，相同错误目标、相同 warning，初始回答加四轮讨论。", "",
         "题目排除了全部 62 道已用题。先在每个题目/攻击源内平均 degree 并列集合，再平均三个攻击源，最后对四题等权平均。12 个题目−位置组合不是 12 道独立题。见 [冻结协议](../../experiments/method_screen_protocol.md)。", "",
+        notes, "",
         "## 所有方法的最终结果", "", "目标采纳率越低越好，准确率越高越好。攻击增量为攻击目标率减去各自配对 clean 目标率，不能把自发错误全部归因于攻击。", "",
         "| 方法 | 攻击目标率 | 攻击准确率 | Clean 目标率 | Clean 准确率 | 攻击增量 |",
         "| --- | ---: | ---: | ---: | ---: | ---: |"]
@@ -242,7 +244,8 @@ def report(root, s, questions, model):
         "- **Edge-cover**：联合选择两个节点，最大化加权路径上的风险衰减代理目标，避免只按单节点分数排序。",
         "- **Uniform-cover**：同样的联合目标，但每条边都使用相同的池化传播率，检验边之间行为差异是否有价值。",
         "- **Intervention-ridge**：直接用历史分配方案的 warning 收益拟合选点分数，目标为相对无保护的攻击−clean 目标率变化；固定正则系数 1，未在新题上调参。", "",
-        "前三类评分及 Uniform-cover 仅使用原来十道开发题 × 三个位置，固定平滑强度 3。Intervention-ridge 单独将旧的 30 道确认实验题改作训练数据；那些历史结果不再是该新方法的 held-out 测试。本轮四题与所有拟合数据隔离。", "",
+        "前三类评分及 Uniform-cover 仅使用原来十道开发题 × 三个位置，固定平滑强度 3。Intervention-ridge 单独将旧的 30 道确认实验题改作训练数据；那些历史结果不再是该新方法的 held-out 测试。本轮四题与所有拟合数据隔离。Intervention-ridge 使用额外的历史干预信息，其结果不能解释为相同训练数据量下算法更优；复用日志不改变这些历史实验曾经消耗推理资源的事实。", "",
+        "NTI、Risk-product、路径模型和干预回归都使用已知攻击位置；本轮没有测试未知源检测。所有普通 agent 使用同一模型和角色提示，未额外设置角色或可信度差异；结果仅覆盖这一张固定图及其对话行为。", "",
         "路径模型只枚举长度 1–4 的简单路径，权重和不是感染概率。每个保护节点使路径权重乘 0.5 是事先固定、未校准的选点假设，不代表测得 warning 有 50% 效力；实际通信图和 warning 均未修改。所有观测评分和回归系数都不能解释为单个节点的因果保护收益。", "",
         "Intervention-ridge 去掉同集合别名，每道历史题的总拟合权重为 1。各源拟合矩阵的秩 / 七个候选维度如下："]
     for source,fit in model["intervention"]["by_source"].items(): lines.append(f"- 源 {source}：{fit['design_rank']}/{fit['eligible_nodes']}，{fit['unique_questions']} 道历史题。")
@@ -265,7 +268,7 @@ def report(root, s, questions, model):
     lines += ["", "完整案例差值见 [case_differences.csv](case_differences.csv)，逐轮人数与保护集合见 [per_trial.csv](per_trial.csv)。时间先后不能单独证明某条消息导致后续错误。", "",
         "## 运行与复核", "",
         f"本机运行耗时 {hours} 小时 {minutes} 分钟；{rt['named_trajectories']} 条命名轨迹，去掉别名后 {rt['distinct_condition_trajectories']} 条条件轨迹，{rt['logical_generations']:,} 个逻辑回答，{rt['unique_generations']:,} 次不同输入生成。实际截断 {rt['unique_truncated_generations']} 次，PyTorch 峰值分配 {rt['peak_torch_allocated_gib']:.2f} GiB。无需付费模型 API。", "",
-        f"原始与解析标签不一致数：{s['validation']['raw_vs_parsed_label_disagreements_all_agents']}。原始格式计数：`{json.dumps(s['logical_parse_status_counts'])}`。审计检查冻结配置、拟合数据来源、源排除、消息与上一轮邻居的对应关系、缓存/对话、别名、clean/attack 初始普通节点输出以及压缩前后哈希。", "",
+        f"推理前 24 项规则测试通过。原始与解析标签不一致数：{s['validation']['raw_vs_parsed_label_disagreements_all_agents']}。原始格式计数：`{json.dumps(s['logical_parse_status_counts'])}`。审计检查冻结配置、拟合数据来源、源排除、消息与上一轮邻居的对应关系、缓存/对话、别名、clean/attack 初始普通节点输出以及压缩前后哈希。", "",
         "[运行元数据](summary_runtime.json) · [全部统计与审计](summary.json) · [原始轨迹](evaluation.jsonl.gz) · [原始生成缓存](generation_cache.jsonl.gz) · [拟合分数与数据](risk_model.json) · [测试日志](tests.log)", "",
         "仅 CPU 复核：", "", "```bash", ".analysis-venv/bin/python scripts/analyze_method_screen.py", ".analysis-venv/bin/python -m unittest discover -s tests -v", "```", "",
         "本轮只筛选候选。任何根据结果选择的方法都需要新题、更多图上的独立确认；重复本轮 greedy 输入不会增加独立样本。"]
@@ -274,4 +277,3 @@ def report(root, s, questions, model):
 
 if __name__ == "__main__":
     main()
-

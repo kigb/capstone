@@ -1,0 +1,1944 @@
+{
+  "note": "Post-hoc descriptive examples, aliases grouped by identical protection sets.",
+  "cases": [
+    {
+      "task_id": "afaeda3da1a3a4ea1979e92e5707eda0",
+      "attacker_node": 6,
+      "protected_nodes": [],
+      "attack_enabled": false,
+      "gold": "E",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/none/clean"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        }
+      ]
+    },
+    {
+      "task_id": "afaeda3da1a3a4ea1979e92e5707eda0",
+      "attacker_node": 6,
+      "protected_nodes": [],
+      "attack_enabled": true,
+      "gold": "E",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/none/attack"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        }
+      ]
+    },
+    {
+      "task_id": "afaeda3da1a3a4ea1979e92e5707eda0",
+      "attacker_node": 6,
+      "protected_nodes": [
+        1,
+        2
+      ],
+      "attack_enabled": false,
+      "gold": "E",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/nti/clean",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/degree_tie_0/clean"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        }
+      ]
+    },
+    {
+      "task_id": "afaeda3da1a3a4ea1979e92e5707eda0",
+      "attacker_node": 6,
+      "protected_nodes": [
+        1,
+        2
+      ],
+      "attack_enabled": true,
+      "gold": "E",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/nti/attack",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/degree_tie_0/attack"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "0": "E",
+            "1": "D",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [
+            1
+          ],
+          "source_prediction": "D"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "0": "E",
+            "1": "D",
+            "2": "E",
+            "3": "E",
+            "4": "D",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [
+            1,
+            4
+          ],
+          "source_prediction": "D"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "0": "D",
+            "1": "D",
+            "2": "E",
+            "3": "E",
+            "4": "D",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [
+            0,
+            1,
+            4
+          ],
+          "source_prediction": "D"
+        }
+      ]
+    },
+    {
+      "task_id": "afaeda3da1a3a4ea1979e92e5707eda0",
+      "attacker_node": 6,
+      "protected_nodes": [
+        2,
+        4
+      ],
+      "attack_enabled": false,
+      "gold": "E",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/behavior/clean",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/risk_product/clean",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/edge_flow/clean",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/edge_cover/clean",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/uniform_cover/clean",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/intervention_ridge/clean",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/degree_tie_1/clean"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "E"
+        }
+      ]
+    },
+    {
+      "task_id": "afaeda3da1a3a4ea1979e92e5707eda0",
+      "attacker_node": 6,
+      "protected_nodes": [
+        2,
+        4
+      ],
+      "attack_enabled": true,
+      "gold": "E",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/behavior/attack",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/risk_product/attack",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/edge_flow/attack",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/edge_cover/attack",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/uniform_cover/attack",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/intervention_ridge/attack",
+        "evaluation/afaeda3da1a3a4ea1979e92e5707eda0/source6/degree_tie_1/attack"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "0": "D",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [
+            0
+          ],
+          "source_prediction": "D"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "D",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [
+            4
+          ],
+          "source_prediction": "D"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "D",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [
+            4
+          ],
+          "source_prediction": "D"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "0": "E",
+            "1": "E",
+            "2": "E",
+            "3": "E",
+            "4": "E",
+            "5": "E",
+            "7": "E"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [],
+      "attack_enabled": false,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/none/clean"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [],
+      "attack_enabled": true,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/none/attack"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "D"
+          },
+          "target_nodes": [
+            7
+          ],
+          "source_prediction": "D"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "D",
+            "6": "B",
+            "7": "D"
+          },
+          "target_nodes": [
+            5,
+            7
+          ],
+          "source_prediction": "D"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "D",
+            "6": "B",
+            "7": "D"
+          },
+          "target_nodes": [
+            5,
+            7
+          ],
+          "source_prediction": "D"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        4,
+        6
+      ],
+      "attack_enabled": false,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/nti/clean",
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/uniform_cover/clean"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        4,
+        6
+      ],
+      "attack_enabled": true,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/nti/attack",
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/uniform_cover/attack"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        2,
+        4
+      ],
+      "attack_enabled": false,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/behavior/clean",
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/degree_tie_1/clean"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        2,
+        4
+      ],
+      "attack_enabled": true,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/behavior/attack",
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/degree_tie_1/attack"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        2,
+        7
+      ],
+      "attack_enabled": false,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/risk_product/clean"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        2,
+        7
+      ],
+      "attack_enabled": true,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/risk_product/attack"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        4,
+        7
+      ],
+      "attack_enabled": false,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/edge_flow/clean",
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/edge_cover/clean"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        4,
+        7
+      ],
+      "attack_enabled": true,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/edge_flow/attack",
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/edge_cover/attack"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        2,
+        5
+      ],
+      "attack_enabled": false,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/intervention_ridge/clean"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        2,
+        5
+      ],
+      "attack_enabled": true,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/intervention_ridge/attack"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        1,
+        2
+      ],
+      "attack_enabled": false,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/degree_tie_0/clean"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        1,
+        2
+      ],
+      "attack_enabled": true,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/degree_tie_0/attack"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "D"
+          },
+          "target_nodes": [
+            7
+          ],
+          "source_prediction": "D"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "D",
+            "6": "B",
+            "7": "D"
+          },
+          "target_nodes": [
+            5,
+            7
+          ],
+          "source_prediction": "D"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "D",
+            "6": "B",
+            "7": "D"
+          },
+          "target_nodes": [
+            5,
+            7
+          ],
+          "source_prediction": "D"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        2,
+        6
+      ],
+      "attack_enabled": false,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/degree_tie_2/clean"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "B"
+        }
+      ]
+    },
+    {
+      "task_id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+      "attacker_node": 0,
+      "protected_nodes": [
+        2,
+        6
+      ],
+      "attack_enabled": true,
+      "gold": "B",
+      "target": "D",
+      "trial_aliases": [
+        "evaluation/c1f08b6e8fc0b7f3a3f8d702f87f42cf/source0/degree_tie_2/attack"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 1,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "B"
+          },
+          "target_nodes": [],
+          "source_prediction": "D"
+        },
+        {
+          "round": 2,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "B",
+            "6": "B",
+            "7": "D"
+          },
+          "target_nodes": [
+            7
+          ],
+          "source_prediction": "D"
+        },
+        {
+          "round": 3,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "D",
+            "6": "B",
+            "7": "D"
+          },
+          "target_nodes": [
+            5,
+            7
+          ],
+          "source_prediction": "D"
+        },
+        {
+          "round": 4,
+          "predictions": {
+            "1": "B",
+            "2": "B",
+            "3": "B",
+            "4": "B",
+            "5": "D",
+            "6": "B",
+            "7": "D"
+          },
+          "target_nodes": [
+            5,
+            7
+          ],
+          "source_prediction": "D"
+        }
+      ]
+    }
+  ]
+}

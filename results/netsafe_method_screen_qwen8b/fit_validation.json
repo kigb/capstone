@@ -1,0 +1,27 @@
+{
+  "risk_model_sha256": "da0d49f8198d91f7aef8d1351d281b0eb6e255cec66745539af4b8d39bdd9fa0",
+  "cpu_refit_matches_frozen_inference_environment_fit": true,
+  "ridge_augmented_least_squares_matches_normal_equation_fit": true,
+  "source_checks": [
+    {
+      "source": 0,
+      "maximum_coefficient_difference": 6.591949208711867e-17,
+      "nonzero_training_outcomes": 12,
+      "design_rank": 6
+    },
+    {
+      "source": 3,
+      "maximum_coefficient_difference": 0.0,
+      "nonzero_training_outcomes": 0,
+      "design_rank": 7
+    },
+    {
+      "source": 6,
+      "maximum_coefficient_difference": 8.326672684688674e-17,
+      "nonzero_training_outcomes": 19,
+      "design_rank": 5
+    }
+  ],
+  "observed_directed_edges": 23,
+  "total_directed_edges": 26
+}
