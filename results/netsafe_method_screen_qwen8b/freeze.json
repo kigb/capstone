@@ -1,0 +1,11 @@
+{
+  "protocol_sha256": "60da757318f8d8e4dde5509f2d18ef2b6d136d9babb887531b71852d76ca613d",
+  "artifact_sha256": {
+    "behavior_model.json": "e60249057c9d1aefb6e5a21c86c067a55183f185f1662ba6eb9735e6e8711860",
+    "risk_model.json": "da0d49f8198d91f7aef8d1351d281b0eb6e255cec66745539af4b8d39bdd9fa0",
+    "placement_diagnostics.json": "4555b0304fa5254485e2ee291eb3ecf700f79b42bb60232e5b13630d5983c40a",
+    "evaluation_questions.json": "3a1a2837ffd71b0dd68db7808c04b407fb13bba0197d6a60963ae25fa8f53471",
+    "evaluation_manifest.json": "b25fd90215a7ad2a0341e0a0a8c1e1888561c22b32cda0e4ccbab11c46665397"
+  },
+  "frozen_at_utc": "2026-11-10T16:15:31.397249+00:00"
+}

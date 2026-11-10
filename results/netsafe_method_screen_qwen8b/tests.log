@@ -1,0 +1,29 @@
+test_all_optimal_ties_and_aliases_are_present (test_confirmation.ConfirmationTests.test_all_optimal_ties_and_aliases_are_present) ... ok
+test_archiving_preserves_raw_bytes_and_can_resume (test_confirmation.ConfirmationTests.test_archiving_preserves_raw_bytes_and_can_resume) ... ok
+test_different_numbers_of_ties_do_not_reweight_questions (test_confirmation.ConfirmationTests.test_different_numbers_of_ties_do_not_reweight_questions) ... ok
+test_manifest_counts_and_clean_attack_pairs (test_confirmation.ConfirmationTests.test_manifest_counts_and_clean_attack_pairs) ... ok
+test_new_questions_exclude_every_previous_split (test_confirmation.ConfirmationTests.test_new_questions_exclude_every_previous_split) ... ok
+test_evaluation_data_rejected_for_fitting (test_placement.PlacementTests.test_evaluation_data_rejected_for_fitting) ... ok
+test_graph_and_budget_controls (test_placement.PlacementTests.test_graph_and_budget_controls) ... ok
+test_invalid_states_are_not_negative_adoption_evidence (test_placement.PlacementTests.test_invalid_states_are_not_negative_adoption_evidence) ... ok
+test_random_draws_average_within_task (test_placement.PlacementTests.test_random_draws_average_within_task) ... ok
+test_rate_ranking_uses_supported_behavior (test_placement.PlacementTests.test_rate_ranking_uses_supported_behavior) ... ok
+test_scoring_and_strict_majority (test_placement.PlacementTests.test_scoring_and_strict_majority) ... ok
+test_shared_exposure_and_attacker_exclusion (test_placement.PlacementTests.test_shared_exposure_and_attacker_exclusion) ... ok
+test_averaging_keeps_budgets_and_questions_separate (test_protection_extension.ProtectionExtensionTests.test_averaging_keeps_budgets_and_questions_separate) ... ok
+test_complete_manifest_and_alias_count (test_protection_extension.ProtectionExtensionTests.test_complete_manifest_and_alias_count) ... ok
+test_fresh_questions_and_balanced_sources (test_protection_extension.ProtectionExtensionTests.test_fresh_questions_and_balanced_sources) ... ok
+test_random_budget_prefixes_are_nested_and_distinct (test_protection_extension.ProtectionExtensionTests.test_random_budget_prefixes_are_nested_and_distinct) ... ok
+test_source_aware_and_coverage_controls (test_protection_extension.ProtectionExtensionTests.test_source_aware_and_coverage_controls) ... ok
+test_vulnerability_counts_only_valid_honest_post_initial_cases (test_protection_extension.ProtectionExtensionTests.test_vulnerability_counts_only_valid_honest_post_initial_cases) ... ok
+test_degree_draws_do_not_reweight_sources (test_screening.ScreeningTests.test_degree_draws_do_not_reweight_sources) ... ok
+test_fresh_crossed_source_manifest (test_screening.ScreeningTests.test_fresh_crossed_source_manifest) ... ok
+test_initial_targets_excluded_and_shared_edge_credit (test_screening.ScreeningTests.test_initial_targets_excluded_and_shared_edge_credit) ... ok
+test_invalid_cases_not_negative_evidence_and_eval_rejected (test_screening.ScreeningTests.test_invalid_cases_not_negative_evidence_and_eval_rejected) ... ok
+test_joint_path_choice_avoids_redundant_top_nodes (test_screening.ScreeningTests.test_joint_path_choice_avoids_redundant_top_nodes) ... ok
+test_ridge_weights_rank_disclosure_and_aliases (test_screening.ScreeningTests.test_ridge_weights_rank_disclosure_and_aliases) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.494s
+
+OK

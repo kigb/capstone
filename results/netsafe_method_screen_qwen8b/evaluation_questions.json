@@ -1,0 +1,90 @@
+[
+  {
+    "id": "afaeda3da1a3a4ea1979e92e5707eda0",
+    "question": "Randy was not doing housework.   His wife was raising two children, and this only increased her workload. It put her under a lot of stress.  What might this lead to?",
+    "question_concept": "doing housework",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "asthma",
+        "more",
+        "boredom",
+        "headache",
+        "arguments"
+      ]
+    },
+    "answerKey": "E"
+  },
+  {
+    "id": "617b6cbc0ad6a7bf3f44b7f49b69466a",
+    "question": "His friends leg began to shake with nerves, he reached out and grasped it so it would what?",
+    "question_concept": "shake",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "rattle",
+        "be still",
+        "nod",
+        "steady",
+        "stay still"
+      ]
+    },
+    "answerKey": "E"
+  },
+  {
+    "id": "c1f08b6e8fc0b7f3a3f8d702f87f42cf",
+    "question": "Where can you find dancing and a bar?",
+    "question_concept": "bar",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "party",
+        "nightclub",
+        "las vegas",
+        "restaurant",
+        "new york city"
+      ]
+    },
+    "answerKey": "B"
+  },
+  {
+    "id": "2cbb483c1aad2a99103a123ecbc17772",
+    "question": "He got a job dancing and waving an advertisement, he got to be outside instead of stuck inside the what?",
+    "question_concept": "advertisement",
+    "choices": {
+      "label": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "text": [
+        "advertisement",
+        "magazine",
+        "store",
+        "web page",
+        "bus"
+      ]
+    },
+    "answerKey": "C"
+  }
+]
