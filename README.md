@@ -4,6 +4,10 @@
 
 本分支包含 NetSafe 的本地推理适配、Qwen2.5-3B-Instruct / Qwen3-8B 两轮 pilot、8B 四轮延长实验、固定预算选点研究、30 道新题确认实验、两档预算的 12 道新题实验，以及最新的四题方法筛选。原始输出、分析代码和中文报告一并保存。推理在 NVIDIA GB10 上完成，不需要付费模型 API。
 
+## 详细研究讲解与 slides 素材（2026-11-16）
+
+新增 **[完整中文讲解稿](docs/capstone_walkthrough_zh.md)** 与 **[44 页 Marp Markdown](docs/capstone_slides_zh.md)**，覆盖研究设计、11 篇相关文献、方法计算、全部实验阶段、NetSafe 论文对照与下一步。每页附讲解备注，可作为制作 slides 的素材。另有 [PDF 预览](docs/capstone_slides_zh.pdf)、[文献核验清单](docs/literature_review_zh.md) 和 [转换 / 删减指南](docs/README.md)。文档明确区分确认结果与探索信号，不将当前 Behavior 或新规则描述为已证明最优。
+
 ## 新的小规模方法筛选（2026-11-10）
 
 新增 Risk-product、Edge-flow、Edge-cover、Uniform-cover 与 Intervention-ridge，在 **4 道全新题 × 3 个攻击位置**上筛选，只使用 k=2。保留无保护、Degree-uniform、NTI 和原 Behavior 对照。每题跨位置配对，独立题目数为 4；不作确认性优越声明。规则、拟合数据和选点重合已在推理前固定，见 [筛选协议](experiments/method_screen_protocol.md)。Intervention-ridge 明确将旧 30 题实验改作训练数据；其他新行为评分只使用原 10 道开发题。
